@@ -1,0 +1,27 @@
+# ===== Secrets — TUYỆT ĐỐI không commit =====
+.env
+**/.env
+*.env.local
+**/*.env.local
+
+# ===== OS / editor =====
+.DS_Store
+**/.DS_Store
+Thumbs.db
+.thumbnail
+**/.thumbnail
+
+# ===== Python (bản Streamlit trong ver/) =====
+.venv/
+**/.venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# ===== Node =====
+node_modules/
+**/node_modules/
+
+# ===== File backup / tạm =====
+*.bak
+**/*.bak

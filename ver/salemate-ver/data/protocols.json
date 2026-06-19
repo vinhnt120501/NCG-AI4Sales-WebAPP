@@ -1,0 +1,79 @@
+[
+  {
+    "id": "P01",
+    "ten_benh": "Tiêu chảy heo con do E.coli",
+    "vat_nuoi": "heo",
+    "trieu_chung": ["tiêu chảy", "phân trắng hoặc vàng", "bỏ ăn", "mất nước", "heo con gầy yếu", "lông xù"],
+    "chan_doan": "Tiêu chảy phân trắng/vàng ở heo con theo mẹ hoặc sau cai sữa, thường do E.coli, kết hợp stress cai sữa và vệ sinh chuồng kém.",
+    "phac_do_so_bo": "Bù nước - điện giải bằng Vita-C; bổ sung men tiêu hóa ProGut; dùng kháng sinh đường ruột (Enro-200) theo chỉ định thú y; giữ ấm và khô chuồng úm.",
+    "san_pham_lien_quan": ["B302", "B301", "T501", "A101"],
+    "do_nghiem_trong": "trung_binh",
+    "can_chuyen_gia": false
+  },
+  {
+    "id": "P02",
+    "ten_benh": "Dịch tả heo",
+    "vat_nuoi": "heo",
+    "trieu_chung": ["sốt cao", "bỏ ăn", "da đỏ tím", "xuất huyết", "chết nhanh", "tụ tập đứng run"],
+    "chan_doan": "Sốt cao, da đỏ tím vùng tai bụng, chết nhanh hàng loạt - nghi dịch tả heo, bệnh truyền nhiễm nguy hiểm.",
+    "phac_do_so_bo": "KHÔNG tự điều trị. Cách ly ngay, báo thú y/cơ quan chức năng, siết an toàn sinh học, rà soát lịch vaccine CSF.",
+    "san_pham_lien_quan": ["V401"],
+    "do_nghiem_trong": "nang",
+    "can_chuyen_gia": true
+  },
+  {
+    "id": "P03",
+    "ten_benh": "Suyễn heo (hô hấp)",
+    "vat_nuoi": "heo",
+    "trieu_chung": ["ho", "khó thở", "thở bụng", "chậm lớn", "giảm ăn"],
+    "chan_doan": "Ho khan kéo dài, thở bụng, heo chậm lớn - nghi viêm phổi/suyễn do Mycoplasma, nặng hơn khi chuồng kín bụi và lạnh ẩm.",
+    "phac_do_so_bo": "Cải thiện thông thoáng chuồng, giảm mật độ; kháng sinh hô hấp theo chỉ định thú y; bổ sung điện giải - vitamin tăng đề kháng.",
+    "san_pham_lien_quan": ["B302"],
+    "do_nghiem_trong": "trung_binh",
+    "can_chuyen_gia": false
+  },
+  {
+    "id": "P04",
+    "ten_benh": "Cầu trùng gà",
+    "vat_nuoi": "gà",
+    "trieu_chung": ["phân có máu", "phân sáp nâu", "xù lông", "giảm ăn", "ủ rũ", "chậm lớn"],
+    "chan_doan": "Phân có máu hoặc phân sáp, gà xù lông ủ rũ - điển hình bệnh cầu trùng, hay gặp khi nền chuồng ẩm.",
+    "phac_do_so_bo": "Dùng thuốc đặc trị cầu trùng (Cocci-Stop) 3-5 ngày; giữ nền chuồng khô; bổ sung vitamin K và điện giải.",
+    "san_pham_lien_quan": ["T502", "B302"],
+    "do_nghiem_trong": "trung_binh",
+    "can_chuyen_gia": false
+  },
+  {
+    "id": "P05",
+    "ten_benh": "Newcastle gà (gà rù)",
+    "vat_nuoi": "gà",
+    "trieu_chung": ["thở khó", "vẹo cổ", "liệt chân", "phân xanh", "chết nhanh", "giảm đẻ đột ngột"],
+    "chan_doan": "Triệu chứng thần kinh (vẹo cổ, liệt), phân xanh, chết nhanh - nghi Newcastle, bệnh truyền nhiễm nguy hiểm.",
+    "phac_do_so_bo": "KHÔNG có thuốc đặc trị. Cách ly, báo thú y, kiểm tra và bổ sung lịch vaccine Newcastle cho đàn.",
+    "san_pham_lien_quan": [],
+    "do_nghiem_trong": "nang",
+    "can_chuyen_gia": true
+  },
+  {
+    "id": "P06",
+    "ten_benh": "CRD - hô hấp mãn tính ở gà",
+    "vat_nuoi": "gà",
+    "trieu_chung": ["hắt hơi", "chảy nước mũi", "khò khè", "giảm đẻ", "sưng mặt"],
+    "chan_doan": "Hắt hơi, khò khè, chảy nước mũi, giảm đẻ - nghi CRD do Mycoplasma gallisepticum, dễ bùng khi thời tiết thay đổi.",
+    "phac_do_so_bo": "Kháng sinh hô hấp theo chỉ định thú y; cải thiện thông thoáng; bổ sung vitamin - điện giải nâng đề kháng.",
+    "san_pham_lien_quan": ["B302"],
+    "do_nghiem_trong": "trung_binh",
+    "can_chuyen_gia": false
+  },
+  {
+    "id": "P07",
+    "ten_benh": "Stress nhiệt",
+    "vat_nuoi": "heo/gà",
+    "trieu_chung": ["thở gấp", "há mồm thở", "giảm ăn", "nằm nhiều", "uống nhiều nước", "giảm tăng trọng"],
+    "chan_doan": "Thở gấp, há mồm, giảm ăn vào ngày nắng nóng - stress nhiệt, ảnh hưởng tăng trọng và tỷ lệ đẻ.",
+    "phac_do_so_bo": "Bổ sung điện giải Vita-C vào nước uống; cho ăn lúc mát; tăng thông gió, làm mát chuồng; đảm bảo nước mát đầy đủ.",
+    "san_pham_lien_quan": ["B302"],
+    "do_nghiem_trong": "nhe",
+    "can_chuyen_gia": false
+  }
+]

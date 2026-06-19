@@ -1,0 +1,14 @@
+# ===== KHÔNG BAO GIỜ commit các file này =====
+# Chứa API key thật → lộ key là mất tiền/quota
+.env
+.streamlit/secrets.toml
+
+# Môi trường ảo & cache Python
+.venv/
+__pycache__/
+*.pyc
+
+# Linh tinh
+.DS_Store
+.streamlit/run.log
+*.log

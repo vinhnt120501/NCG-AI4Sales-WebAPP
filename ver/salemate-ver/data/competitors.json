@@ -1,0 +1,80 @@
+[
+  {
+    "hang": "De Heus",
+    "ten_sp": "De Heus Pig Grower 102",
+    "vat_nuoi": "heo",
+    "giai_doan": "heo thịt choai",
+    "dam_pct": 18.0,
+    "xo_pct": 5.5,
+    "nang_luong_kcal": 3250,
+    "canxi_pct": 0.80,
+    "fcr_tham_chieu": 2.3,
+    "gia_vnd_per_kg": 16800,
+    "nguon": "DEMO - dữ liệu mẫu, chưa kiểm chứng"
+  },
+  {
+    "hang": "GreenFeed",
+    "ten_sp": "GreenFeed G9105",
+    "vat_nuoi": "heo",
+    "giai_doan": "heo thịt choai",
+    "dam_pct": 17.5,
+    "xo_pct": 6.0,
+    "nang_luong_kcal": 3220,
+    "canxi_pct": 0.78,
+    "fcr_tham_chieu": 2.35,
+    "gia_vnd_per_kg": 16200,
+    "nguon": "DEMO - dữ liệu mẫu, chưa kiểm chứng"
+  },
+  {
+    "hang": "CP",
+    "ten_sp": "CP 551",
+    "vat_nuoi": "heo",
+    "giai_doan": "heo thịt choai",
+    "dam_pct": 18.5,
+    "xo_pct": 5.0,
+    "nang_luong_kcal": 3300,
+    "canxi_pct": 0.82,
+    "fcr_tham_chieu": 2.25,
+    "gia_vnd_per_kg": 17400,
+    "nguon": "DEMO - dữ liệu mẫu, chưa kiểm chứng"
+  },
+  {
+    "hang": "Cargill",
+    "ten_sp": "Cargill 1042",
+    "vat_nuoi": "heo",
+    "giai_doan": "heo thịt choai",
+    "dam_pct": 17.8,
+    "xo_pct": 5.8,
+    "nang_luong_kcal": 3240,
+    "canxi_pct": 0.79,
+    "fcr_tham_chieu": 2.3,
+    "gia_vnd_per_kg": 16600,
+    "nguon": "DEMO - dữ liệu mẫu, chưa kiểm chứng"
+  },
+  {
+    "hang": "Japfa",
+    "ten_sp": "Japfa Comfeed GP02",
+    "vat_nuoi": "heo",
+    "giai_doan": "heo thịt choai",
+    "dam_pct": 17.2,
+    "xo_pct": 6.2,
+    "nang_luong_kcal": 3200,
+    "canxi_pct": 0.77,
+    "fcr_tham_chieu": 2.4,
+    "gia_vnd_per_kg": 15900,
+    "nguon": "DEMO - dữ liệu mẫu, chưa kiểm chứng"
+  },
+  {
+    "hang": "CP",
+    "ten_sp": "CP Broiler C-21",
+    "vat_nuoi": "gà",
+    "giai_doan": "gà thịt vỗ béo",
+    "dam_pct": 19.5,
+    "xo_pct": 4.8,
+    "nang_luong_kcal": 3120,
+    "canxi_pct": 0.92,
+    "fcr_tham_chieu": 1.65,
+    "gia_vnd_per_kg": 15100,
+    "nguon": "DEMO - dữ liệu mẫu, chưa kiểm chứng"
+  }
+]
