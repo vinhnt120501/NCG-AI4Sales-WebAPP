@@ -22,8 +22,8 @@
   .mkt-chip{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:#3A4A53;background:#fff;border:1px solid #E1E8ED;padding:7px 12px;border-radius:10px}
   input:focus,textarea:focus,select:focus{outline:none}
   .sm-inputbox{transition:border-color .15s,box-shadow .15s}
-  .sm-inputbox:focus-within{border-color:#0070B0 !important;box-shadow:0 2px 14px rgba(0,112,176,.16)}
-  .sm-field:focus{border-color:#0070B0 !important;box-shadow:0 0 0 3px rgba(0,112,176,.15)}
+  .sm-inputbox:focus-within{border-color:#36677D !important;box-shadow:0 2px 14px rgba(54,103,125,.16)}
+  .sm-field:focus{border-color:#36677D !important;box-shadow:0 0 0 3px rgba(54,103,125,.15)}
   ::-webkit-scrollbar{width:10px;height:10px}
   ::-webkit-scrollbar-thumb{background:#CDD8DF;border-radius:8px;border:3px solid transparent;background-clip:content-box}
   ::-webkit-scrollbar-thumb:hover{background:#B3C2CB;background-clip:content-box}
@@ -43,7 +43,7 @@
         <img src="assets/anova-logo.png" alt="Anova Feed" style="height:26px;width:auto;display:block;flex:none">
         <span style="width:1px;height:24px;background:#E1E8ED;display:block;flex:none"></span>
         <div style="display:flex;flex-direction:column;justify-content:center;line-height:1.1">
-          <div style="font-size:15px;font-weight:800;letter-spacing:-.2px;color:#0070B0">SalesMate</div>
+          <div style="font-size:15px;font-weight:800;letter-spacing:-.2px;color:#36677D">SalesMate</div>
           <div style="font-size:10px;font-weight:500;color:#80909A;letter-spacing:.2px">AI · Nova Consumer</div>
         </div>
       </div>
@@ -51,8 +51,8 @@
 
     <sc-if value="{{ isChat }}" hint-placeholder-val="{{ true }}">
     <div style="padding:14px 16px 2px 16px;display:flex;flex-direction:column;gap:8px">
-      <button onClick="{{ openCaseForm }}" style="width:100%;display:inline-flex;align-items:center;justify-content:center;gap:7px;font-family:'Be Vietnam Pro';font-size:13px;font-weight:700;color:#fff;background:#0070B0;border:none;padding:10px 12px;border-radius:10px;cursor:pointer" style-hover="background:#005A8C">＋ Tạo ca bệnh</button>
-      <button onClick="{{ reset }}" style="width:100%;display:inline-flex;align-items:center;justify-content:center;gap:7px;font-family:'Be Vietnam Pro';font-size:13px;font-weight:600;color:#0070B0;background:#fff;border:1px solid #D2E5F1;padding:9px 12px;border-radius:10px;cursor:pointer" style-hover="background:#F0F6FA;border-color:#0070B0">＋ Hội thoại mới</button>
+      <button onClick="{{ openCaseForm }}" style="width:100%;display:inline-flex;align-items:center;justify-content:center;gap:7px;font-family:'Be Vietnam Pro';font-size:13px;font-weight:700;color:#fff;background:#36677D;border:none;padding:10px 12px;border-radius:10px;cursor:pointer" style-hover="background:#13212C">＋ Tạo ca bệnh</button>
+      <button onClick="{{ reset }}" style="width:100%;display:inline-flex;align-items:center;justify-content:center;gap:7px;font-family:'Be Vietnam Pro';font-size:13px;font-weight:600;color:#36677D;background:#fff;border:1px solid #94BFCE;padding:9px 12px;border-radius:10px;cursor:pointer" style-hover="background:#F0F6FA;border-color:#36677D">＋ Hội thoại mới</button>
     </div>
     <button onClick="{{ toggleCap }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:16px 16px 7px 16px;background:transparent;border:none;cursor:pointer;transition:opacity .15s" style-hover="opacity:.7" style-active="opacity:.45">
       <span style="font-size:11.5px;font-weight:700;letter-spacing:.2px;color:#8B99A2">Năng lực trợ lý</span>
@@ -62,8 +62,8 @@
     <div style="padding:0 16px;display:flex;flex-direction:column;gap:4px;animation:sm-up .22s ease">
 
       <button onClick="{{ runDiagnose }}" style="display:flex;gap:11px;align-items:center;text-align:left;padding:10px;border:1px solid transparent;background:transparent;border-radius:11px;cursor:pointer;width:100%;transition:background .15s,transform .12s" style-hover="background:#F0F6FA" style-active="background:#E7F0F6;transform:scale(.99)">
-        <span style="width:34px;height:34px;flex:none;border-radius:9px;background:#FBEAE8;display:flex;align-items:center;justify-content:center">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#C0392B" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+        <span style="width:34px;height:34px;flex:none;border-radius:9px;background:#F8EEF0;display:flex;align-items:center;justify-content:center">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#9E5564" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
         </span>
         <span style="min-width:0">
           <span style="display:block;font-size:13px;font-weight:600;color:#23323B">Chẩn đoán bệnh</span>
@@ -72,8 +72,8 @@
       </button>
 
       <button onClick="{{ runDrug }}" style="display:flex;gap:11px;align-items:center;text-align:left;padding:10px;border:1px solid transparent;background:transparent;border-radius:11px;cursor:pointer;width:100%;transition:background .15s,transform .12s" style-hover="background:#F0F6FA" style-active="background:#E7F0F6;transform:scale(.99)">
-        <span style="width:34px;height:34px;flex:none;border-radius:9px;background:#E8F2F8;display:flex;align-items:center;justify-content:center">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#0070B0" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"></circle><line x1="15.5" y1="15.5" x2="20" y2="20"></line></svg>
+        <span style="width:34px;height:34px;flex:none;border-radius:9px;background:#E7F2F5;display:flex;align-items:center;justify-content:center">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#36677D" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"></circle><line x1="15.5" y1="15.5" x2="20" y2="20"></line></svg>
         </span>
         <span style="min-width:0">
           <span style="display:block;font-size:13px;font-weight:600;color:#23323B">Tra cứu thuốc &amp; vaccine</span>
@@ -82,8 +82,8 @@
       </button>
 
       <button onClick="{{ runDistributor }}" style="display:flex;gap:11px;align-items:center;text-align:left;padding:10px;border:1px solid transparent;background:transparent;border-radius:11px;cursor:pointer;width:100%;transition:background .15s,transform .12s" style-hover="background:#F0F6FA" style-active="background:#E7F0F6;transform:scale(.99)">
-        <span style="width:34px;height:34px;flex:none;border-radius:9px;background:#EEF6E4;display:flex;align-items:center;justify-content:center">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#5E8E28" stroke-width="2" stroke-linecap="round"><line x1="6" y1="20" x2="6" y2="13"></line><line x1="12" y1="20" x2="12" y2="7"></line><line x1="18" y1="20" x2="18" y2="10"></line></svg>
+        <span style="width:34px;height:34px;flex:none;border-radius:9px;background:#EDF5F0;display:flex;align-items:center;justify-content:center">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#4C825C" stroke-width="2" stroke-linecap="round"><line x1="6" y1="20" x2="6" y2="13"></line><line x1="12" y1="20" x2="12" y2="7"></line><line x1="18" y1="20" x2="18" y2="10"></line></svg>
         </span>
         <span style="min-width:0">
           <span style="display:block;font-size:13px;font-weight:600;color:#23323B">Phân tích nhà phân phối</span>
@@ -92,8 +92,8 @@
       </button>
 
       <button onClick="{{ runRag }}" style="display:flex;gap:11px;align-items:center;text-align:left;padding:10px;border:1px solid transparent;background:transparent;border-radius:11px;cursor:pointer;width:100%;transition:background .15s,transform .12s" style-hover="background:#F0F6FA" style-active="background:#E7F0F6;transform:scale(.99)">
-        <span style="width:34px;height:34px;flex:none;border-radius:9px;background:#F0EEF8;display:flex;align-items:center;justify-content:center">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#6A52B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="2"></rect><line x1="9" y1="8" x2="15" y2="8"></line><line x1="9" y1="12" x2="15" y2="12"></line><line x1="9" y1="16" x2="13" y2="16"></line></svg>
+        <span style="width:34px;height:34px;flex:none;border-radius:9px;background:#F5F3F9;display:flex;align-items:center;justify-content:center">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#6E5A9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="2"></rect><line x1="9" y1="8" x2="15" y2="8"></line><line x1="9" y1="12" x2="15" y2="12"></line><line x1="9" y1="16" x2="13" y2="16"></line></svg>
         </span>
         <span style="min-width:0">
           <span style="display:block;font-size:13px;font-weight:600;color:#23323B">Tra cứu tài liệu</span>
@@ -111,7 +111,7 @@
     <sc-if value="{{ secCase }}" hint-placeholder-val="{{ true }}">
     <div style="padding:0 16px;display:flex;flex-direction:column;gap:5px;animation:sm-up .22s ease">
       <sc-for list="{{ recentCases }}" as="c" hint-placeholder-count="3">
-        <button onClick="{{ c.open }}" style="display:block;text-align:left;width:100%;padding:8px 10px;border:1px solid #EEF2F5;border-radius:9px;background:#fff;cursor:pointer;transition:background .15s,border-color .15s,transform .12s" style-hover="background:#F4F8FA;border-color:#D2E5F1" style-active="background:#EEF4F8;transform:scale(.99)">
+        <button onClick="{{ c.open }}" style="display:block;text-align:left;width:100%;padding:8px 10px;border:1px solid #EEF2F5;border-radius:9px;background:#fff;cursor:pointer;transition:background .15s,border-color .15s,transform .12s" style-hover="background:#F4F8FA;border-color:#94BFCE" style-active="background:#EEF4F8;transform:scale(.99)">
           <div style="display:flex;justify-content:space-between;gap:8px;align-items:center">
             <span style="font-size:12.5px;font-weight:600;color:#23323B;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ c.title }}</span>
             <span style="flex:none;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#9AA8B1">{{ c.id }}</span>
@@ -145,21 +145,21 @@
       <div style="padding:4px 16px 10px 16px;display:flex;flex-direction:column;gap:9px">
         <sc-for list="{{ marketByDisease }}" as="d" hint-placeholder-count="4">
           <div>
-            <div style="display:flex;justify-content:space-between;gap:8px;margin-bottom:3px"><span style="font-size:12px;color:#3A4A53">{{ d.ten }}</span><span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#0070B0;font-weight:600">{{ d.count }}</span></div>
-            <div style="height:6px;background:#EEF2F5;border-radius:4px;overflow:hidden"><div style="height:100%;border-radius:4px;background:#0070B0;width: {{ d.pct }}%"></div></div>
+            <div style="display:flex;justify-content:space-between;gap:8px;margin-bottom:3px"><span style="font-size:12px;color:#3A4A53">{{ d.ten }}</span><span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#36677D;font-weight:600">{{ d.count }}</span></div>
+            <div style="height:6px;background:#EEF2F5;border-radius:4px;overflow:hidden"><div style="height:100%;border-radius:4px;background:#36677D;width: {{ d.pct }}%"></div></div>
           </div>
         </sc-for>
       </div>
       <div style="padding:14px 16px 6px 16px;font-size:11.5px;font-weight:700;letter-spacing:.2px;color:#8B99A2">Cảnh báo gần đây</div>
       <div style="padding:0 16px 12px 16px;display:flex;flex-direction:column;gap:6px;overflow:auto;flex:1">
         <sc-for list="{{ marketRecent }}" as="a" hint-placeholder-count="5">
-          <button onClick="{{ a.open }}" style="display:block;text-align:left;width:100%;padding:8px 10px;border:1px solid #EEF2F5;border-radius:9px;background:#fff;cursor:pointer;transition:.15s" style-hover="background:#F4F8FA;border-color:#D2E5F1">
+          <button onClick="{{ a.open }}" style="display:block;text-align:left;width:100%;padding:8px 10px;border:1px solid #EEF2F5;border-radius:9px;background:#fff;cursor:pointer;transition:.15s" style-hover="background:#F4F8FA;border-color:#94BFCE">
             <div style="display:flex;justify-content:space-between;align-items:center;gap:8px">
               <span style="font-size:12.5px;font-weight:600;color:#23323B">{{ a.tinh }}</span>
               <span style="flex:none;font-size:10px;font-weight:700;color:#fff;padding:2px 7px;border-radius:10px;background: {{ a.color }}">{{ a.muc }}</span>
             </div>
             <div style="font-size:11.5px;color:#7E8C95;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ a.benh }}</div>
-            <div style="font-size:10.5px;font-weight:600;color:#0070B0;margin-top:4px">Tạo chiến dịch →</div>
+            <div style="font-size:10.5px;font-weight:600;color:#36677D;margin-top:4px">Tạo chiến dịch →</div>
           </button>
         </sc-for>
       </div>
@@ -192,7 +192,7 @@
           <sc-if value="{{ userOn }}" hint-placeholder-val="{{ true }}">
             <div style="position:absolute;top:48px;right:0;z-index:900;width:290px;background:#fff;border:1px solid #E1E8ED;border-radius:14px;box-shadow:0 16px 44px rgba(22,36,46,.18);overflow:hidden;animation:sm-up .18s ease">
               <div style="display:flex;align-items:center;gap:11px;padding:14px 16px;border-bottom:1px solid #EEF2F5">
-                <span style="width:40px;height:40px;flex:none;border-radius:50%;background:#0070B0;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px">NS</span>
+                <span style="width:40px;height:40px;flex:none;border-radius:50%;background:#36677D;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px">NS</span>
                 <div style="min-width:0">
                   <div style="font-size:14px;font-weight:700;color:#1C2B34">Nguyễn Văn Sơn</div>
                   <div style="font-size:11.5px;color:#8B99A2">{{ roleName }}</div>
@@ -219,7 +219,7 @@
               </div>
               <div style="display:flex;gap:8px;padding:13px 16px 14px">
                 <button onClick="{{ exportDemo }}" style="flex:1;font-family:'Be Vietnam Pro';font-size:12px;font-weight:600;color:#5E6E78;background:#fff;border:1px solid #E1E8ED;padding:9px;border-radius:9px;cursor:pointer" style-hover="background:#F4F8FA;border-color:#CDD8DF">Xuất JSON</button>
-                <button onClick="{{ resetDemo }}" style="flex:1;font-family:'Be Vietnam Pro';font-size:12px;font-weight:600;color:#C0392B;background:#FCEEEC;border:1px solid #F2C9C4;padding:9px;border-radius:9px;cursor:pointer" style-hover="background:#F8E0DC">Reset demo</button>
+                <button onClick="{{ resetDemo }}" style="flex:1;font-family:'Be Vietnam Pro';font-size:12px;font-weight:600;color:#9E5564;background:#F8EEF0;border:1px solid #E8C8CE;padding:9px;border-radius:9px;cursor:pointer" style-hover="background:#F0D5D9">Reset demo</button>
               </div>
             </div>
           </sc-if>
@@ -238,7 +238,7 @@
             <div style="font-size:14px;color:#7E8C95;margin-top:9px;max-width:480px;line-height:1.55;text-align:center">Mô tả ca bệnh, hỏi sản phẩm, tên nhà phân phối — hoặc chọn một năng lực ở thanh bên trái.</div>
             <div class="sm-inputbox" style="width:100%;max-width:680px;margin-top:26px;display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #DDE5EA;border-radius:14px;padding:7px 7px 7px 16px;box-shadow:0 2px 12px rgba(22,36,46,.06)">
               <input value="{{ inputVal }}" onChange="{{ onInput }}" onKeyDown="{{ onKey }}" placeholder="Mô tả triệu chứng, hỏi sản phẩm, hoặc tên nhà phân phối…" style="flex:1;border:none;outline:none;font-family:'Be Vietnam Pro';font-size:14px;color:#16242E;background:transparent;padding:8px 0">
-              <button onClick="{{ send }}" style="flex:none;width:40px;height:40px;border-radius:11px;border:none;background:#0070B0;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.15s" style-hover="background:#005A8C">
+              <button onClick="{{ send }}" style="flex:none;width:40px;height:40px;border-radius:11px;border:none;background:#36677D;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.15s" style-hover="background:#13212C">
                 <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg>
               </button>
             </div>
@@ -255,8 +255,8 @@
             <!-- USER -->
             <sc-if value="{{ m.isUser }}" hint-placeholder-val="{{ true }}">
               <div style="display:flex;justify-content:flex-end;gap:11px;align-items:flex-start">
-                <div style="max-width:74%;background:#0070B0;color:#fff;font-size:14px;line-height:1.55;padding:11px 16px;border-radius:16px 16px 4px 16px;box-shadow:0 2px 8px rgba(0,112,176,.18)">{{ m.text }}</div>
-                <div style="width:34px;height:34px;flex:none;border-radius:50%;background:#0070B0;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;margin-top:2px">NS</div>
+                <div style="max-width:74%;background:#36677D;color:#fff;font-size:14px;line-height:1.55;padding:11px 16px;border-radius:16px 16px 4px 16px;box-shadow:0 2px 8px rgba(54,103,125,.18)">{{ m.text }}</div>
+                <div style="width:34px;height:34px;flex:none;border-radius:50%;background:#36677D;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;margin-top:2px">NS</div>
               </div>
             </sc-if>
 
@@ -272,14 +272,14 @@
                       <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
                         <span style="font-size:13px;font-weight:600;color:#3A4A53">{{ m.thinkLabel }}</span>
                         <span style="display:inline-flex;gap:3px">
-                          <span style="width:5px;height:5px;border-radius:50%;background:#0070B0;animation:sm-blink 1.2s infinite"></span>
-                          <span style="width:5px;height:5px;border-radius:50%;background:#0070B0;animation:sm-blink 1.2s infinite .2s"></span>
-                          <span style="width:5px;height:5px;border-radius:50%;background:#0070B0;animation:sm-blink 1.2s infinite .4s"></span>
+                          <span style="width:5px;height:5px;border-radius:50%;background:#36677D;animation:sm-blink 1.2s infinite"></span>
+                          <span style="width:5px;height:5px;border-radius:50%;background:#36677D;animation:sm-blink 1.2s infinite .2s"></span>
+                          <span style="width:5px;height:5px;border-radius:50%;background:#36677D;animation:sm-blink 1.2s infinite .4s"></span>
                         </span>
                       </div>
                       <div style="display:flex;flex-wrap:wrap;gap:6px">
                         <sc-for list="{{ m.thinkPills }}" as="p" hint-placeholder-count="2">
-                          <span style="display:inline-flex;align-items:center;gap:6px;font-family:'JetBrains Mono',monospace;font-size:11px;color:#0070B0;background:#EDF5FA;border:1px solid #D7E8F2;padding:4px 9px;border-radius:7px;animation:sm-pulse 1.4s infinite"><span style="width:6px;height:6px;border-radius:50%;background:#80C040"></span>{{ p }}</span>
+                          <span style="display:inline-flex;align-items:center;gap:6px;font-family:'JetBrains Mono',monospace;font-size:11px;color:#36677D;background:#E7F2F5;border:1px solid #94BFCE;padding:4px 9px;border-radius:7px;animation:sm-pulse 1.4s infinite"><span style="width:6px;height:6px;border-radius:50%;background:#5C926D"></span>{{ p }}</span>
                         </sc-for>
                       </div>
                     </div>
@@ -289,7 +289,7 @@
                   <sc-if value="{{ m.pills }}" hint-placeholder-val="{{ true }}">
                     <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px">
                       <sc-for list="{{ m.pills }}" as="p" hint-placeholder-count="2">
-                        <span style="display:inline-flex;align-items:center;gap:6px;font-family:'JetBrains Mono',monospace;font-size:10.5px;color:#5E8E28;background:#F1F7E8;border:1px solid #DDEBC8;padding:4px 9px;border-radius:7px"><span style="width:6px;height:6px;border-radius:50%;background:#80C040"></span>{{ p }}<span style="color:#9DB87C">✓</span></span>
+                        <span style="display:inline-flex;align-items:center;gap:6px;font-family:'JetBrains Mono',monospace;font-size:10.5px;color:#4C825C;background:#EDF5F0;border:1px solid #CADDCF;padding:4px 9px;border-radius:7px"><span style="width:6px;height:6px;border-radius:50%;background:#5C926D"></span>{{ p }}<span style="color:#78A386">✓</span></span>
                       </sc-for>
                     </div>
                   </sc-if>
@@ -308,11 +308,11 @@
                     <div style="margin-top:12px;background:#fff;border:1px solid #E4EBEF;border-radius:14px;overflow:hidden">
                       <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 17px;border-bottom:1px solid #EEF2F5">
                         <div style="display:flex;align-items:center;gap:8px">
-                          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0070B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"></rect><line x1="9" y1="9" x2="15" y2="9"></line><line x1="9" y1="13" x2="15" y2="13"></line><line x1="9" y1="17" x2="12" y2="17"></line></svg>
+                          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#36677D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"></rect><line x1="9" y1="9" x2="15" y2="9"></line><line x1="9" y1="13" x2="15" y2="13"></line><line x1="9" y1="17" x2="12" y2="17"></line></svg>
                           <span style="font-size:13px;font-weight:700;color:#23323B">Hồ sơ ca bệnh</span>
                           <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#9AA8B1;background:#F4F7F9;padding:2px 7px;border-radius:5px">{{ m.caseSnapshot.id }}</span>
                         </div>
-                        <span style="flex:none;font-size:11px;font-weight:700;color:#0070B0;background:#E8F2F8;border:1px solid #D2E5F1;padding:4px 11px;border-radius:20px">Đầy đủ {{ m.caseSnapshot.completeness }}%</span>
+                        <span style="flex:none;font-size:11px;font-weight:700;color:#36677D;background:#E7F2F5;border:1px solid #94BFCE;padding:4px 11px;border-radius:20px">Đầy đủ {{ m.caseSnapshot.completeness }}%</span>
                       </div>
                       <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:#EEF2F5">
                         <sc-for list="{{ m.caseSnapshot.stats }}" as="st" hint-placeholder-count="6">
@@ -327,9 +327,9 @@
 
                   <!-- ESCALATION -->
                   <sc-if value="{{ m.escalation }}" hint-placeholder-val="{{ true }}">
-                    <div style="margin-top:12px;background:#FCEEEC;border:1px solid #F2C9C4;border-left:4px solid #C0392B;border-radius:10px;padding:13px 15px">
-                      <div style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:#A8322B">⚠️ {{ m.escalation.title }}</div>
-                      <div style="font-size:12.5px;line-height:1.55;color:#7C4742;margin-top:5px">{{ m.escalation.body }}</div>
+                    <div style="margin-top:12px;background:#F8EEF0;border:1px solid #E8C8CE;border-left:4px solid #9E5564;border-radius:10px;padding:13px 15px">
+                      <div style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:#8B4F58">⚠️ {{ m.escalation.title }}</div>
+                      <div style="font-size:12.5px;line-height:1.55;color:#6E444A;margin-top:5px">{{ m.escalation.body }}</div>
                     </div>
                   </sc-if>
 
@@ -384,9 +384,9 @@
 
                   <!-- EARLY WARNING (cảnh báo sớm / dự đoán) -->
                   <sc-if value="{{ m.earlyWarning }}" hint-placeholder-val="{{ true }}">
-                    <div style="margin-top:12px;background:#FFF7ED;border:1px solid #F3D7AE;border-left:4px solid #E0902A;border-radius:10px;padding:13px 15px">
-                      <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#B5731A;text-transform:uppercase;margin-bottom:5px">⚡ Chỉ số cảnh báo sớm</div>
-                      <div style="font-size:12.5px;line-height:1.55;color:#7A5A1E">{{ m.earlyWarning }}</div>
+                    <div style="margin-top:12px;background:#FAF5ED;border:1px solid #EADBC4;border-left:4px solid #C69D5D;border-radius:10px;padding:13px 15px">
+                      <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#8A6635;text-transform:uppercase;margin-bottom:5px">⚡ Chỉ số cảnh báo sớm</div>
+                      <div style="font-size:12.5px;line-height:1.55;color:#9A723C">{{ m.earlyWarning }}</div>
                     </div>
                   </sc-if>
 
@@ -394,15 +394,15 @@
                   <sc-if value="{{ m.missingQuestions }}" hint-placeholder-val="{{ true }}">
                     <div style="margin-top:12px;background:#fff;border:1px solid #E4EBEF;border-radius:14px;padding:14px 17px">
                       <div style="display:flex;align-items:center;gap:8px">
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0070B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9.3a2.8 2.8 0 0 1 5.4 1c0 1.9-2.8 2.5-2.8 2.5"></path><line x1="12" y1="17" x2="12" y2="17"></line></svg>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#36677D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9.3a2.8 2.8 0 0 1 5.4 1c0 1.9-2.8 2.5-2.8 2.5"></path><line x1="12" y1="17" x2="12" y2="17"></line></svg>
                         <span style="font-size:13px;font-weight:700;color:#23323B">Cần hỏi khách thêm</span>
                       </div>
                       <div style="font-size:11.5px;color:#90A0A9;margin:3px 0 11px 23px">Bấm để đưa câu hỏi vào ô soạn chat</div>
                       <div style="display:flex;flex-direction:column;gap:7px">
                         <sc-for list="{{ m.missingQuestions }}" as="q" hint-placeholder-count="3">
-                          <button onClick="{{ q.fill }}" style="display:flex;align-items:center;gap:11px;text-align:left;width:100%;background:#F7FAFC;border:1px solid #E4EBEF;border-radius:9px;padding:9px 12px;cursor:pointer;transition:.15s" style-hover="background:#F0F6FA;border-color:#0070B0">
+                          <button onClick="{{ q.fill }}" style="display:flex;align-items:center;gap:11px;text-align:left;width:100%;background:#F7FAFC;border:1px solid #E4EBEF;border-radius:9px;padding:9px 12px;cursor:pointer;transition:.15s" style-hover="background:#F0F6FA;border-color:#36677D">
                             <span style="flex:1;font-size:12.5px;color:#3A4A53;line-height:1.45">{{ q.q }}</span>
-                            <span style="flex:none;font-size:11px;font-weight:700;color:#0070B0">＋ Hỏi</span>
+                            <span style="flex:none;font-size:11px;font-weight:700;color:#36677D">＋ Hỏi</span>
                           </button>
                         </sc-for>
                       </div>
@@ -413,7 +413,7 @@
                   <sc-if value="{{ m.science }}" hint-placeholder-val="{{ true }}">
                     <div style="margin-top:12px;background:#fff;border:1px solid #E4EBEF;border-radius:14px;overflow:hidden">
                       <div style="padding:13px 17px;border-bottom:1px solid #EEF2F5;display:flex;align-items:center;gap:8px">
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6A52B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"></path><path d="M10 3v6.5L5.5 17a2 2 0 0 0 1.7 3h9.6a2 2 0 0 0 1.7-3L14 9.5V3"></path></svg>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6E5A9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"></path><path d="M10 3v6.5L5.5 17a2 2 0 0 0 1.7 3h9.6a2 2 0 0 0 1.7-3L14 9.5V3"></path></svg>
                         <span style="font-size:13px;font-weight:700;color:#23323B">Cơ sở khoa học &amp; dịch tễ</span>
                       </div>
                       <div style="padding:4px 17px 12px 17px">
@@ -434,7 +434,7 @@
                       <div style="display:flex;flex-direction:column;gap:9px">
                         <sc-for list="{{ m.steps }}" as="s" hint-placeholder-count="3">
                           <div style="display:flex;gap:11px;align-items:flex-start">
-                            <span style="width:21px;height:21px;flex:none;border-radius:7px;background:#EEF6E4;color:#5E8E28;font-size:11.5px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:1px">{{ s.n }}</span>
+                            <span style="width:21px;height:21px;flex:none;border-radius:7px;background:#EDF5F0;color:#4C825C;font-size:11.5px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:1px">{{ s.n }}</span>
                             <span style="font-size:13px;line-height:1.5;color:#3A4A53">{{ s.t }}</span>
                           </div>
                         </sc-for>
@@ -492,13 +492,13 @@
                       <div style="font-size:13px;font-weight:700;color:#23323B;margin-bottom:9px">Sản phẩm Nova Consumer liên quan</div>
                       <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px">
                         <sc-for list="{{ m.products }}" as="pr" hint-placeholder-count="3">
-                          <div onClick="{{ pr.open }}" style="cursor:pointer;background:#fff;border:1px solid #E4EBEF;border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:7px;transition:.15s" style-hover="border-color:#0070B0;box-shadow:0 6px 16px rgba(0,112,176,.1)">
-                            <span style="align-self:flex-start;font-size:10px;font-weight:700;color:#5E8E28;background:#F1F7E8;border:1px solid #DDEBC8;padding:3px 8px;border-radius:6px">{{ pr.badge }}</span>
+                          <div onClick="{{ pr.open }}" style="cursor:pointer;background:#fff;border:1px solid #E4EBEF;border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:7px;transition:.15s" style-hover="border-color:#36677D;box-shadow:0 6px 16px rgba(54,103,125,.1)">
+                            <span style="align-self:flex-start;font-size:10px;font-weight:700;color:#4C825C;background:#EDF5F0;border:1px solid #CADDCF;padding:3px 8px;border-radius:6px">{{ pr.badge }}</span>
                             <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#9AA8B1">{{ pr.ma }}</span>
                             <span style="font-size:13.5px;font-weight:700;color:#1C2B34;line-height:1.25">{{ pr.ten }}</span>
                             <span style="font-size:11.5px;color:#7E8C95">{{ pr.hang }} · {{ pr.loai }}</span>
                             <span style="font-size:11.5px;color:#5E6E78;line-height:1.45">{{ pr.note }}</span>
-                            <span style="font-size:11px;font-weight:600;color:#0070B0;margin-top:2px">Xem chi tiết →</span>
+                            <span style="font-size:11px;font-weight:600;color:#36677D;margin-top:2px">Xem chi tiết →</span>
                           </div>
                         </sc-for>
                       </div>
@@ -518,12 +518,12 @@
                             </div>
                             <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding:12px 14px">
                               <sc-for list="{{ grp.items }}" as="pr" hint-placeholder-count="2">
-                                <div onClick="{{ pr.open }}" style="cursor:pointer;background:#fff;border:1px solid #E4EBEF;border-radius:11px;padding:11px;display:flex;flex-direction:column;gap:6px;transition:.15s" style-hover="border-color:#0070B0;box-shadow:0 6px 16px rgba(0,112,176,.1)">
-                                  <span style="align-self:flex-start;font-size:9.5px;font-weight:700;color:#5E8E28;background:#F1F7E8;border:1px solid #DDEBC8;padding:2px 7px;border-radius:5px">{{ pr.badge }}</span>
+                                <div onClick="{{ pr.open }}" style="cursor:pointer;background:#fff;border:1px solid #E4EBEF;border-radius:11px;padding:11px;display:flex;flex-direction:column;gap:6px;transition:.15s" style-hover="border-color:#36677D;box-shadow:0 6px 16px rgba(54,103,125,.1)">
+                                  <span style="align-self:flex-start;font-size:9.5px;font-weight:700;color:#4C825C;background:#EDF5F0;border:1px solid #CADDCF;padding:2px 7px;border-radius:5px">{{ pr.badge }}</span>
                                   <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#9AA8B1">{{ pr.ma }}</span>
                                   <span style="font-size:13px;font-weight:700;color:#1C2B34;line-height:1.25">{{ pr.ten }}</span>
                                   <span style="font-size:11px;color:#7E8C95;line-height:1.4">{{ pr.note }}</span>
-                                  <span style="font-size:10.5px;font-weight:600;color:#0070B0;margin-top:1px">Xem chi tiết →</span>
+                                  <span style="font-size:10.5px;font-weight:600;color:#36677D;margin-top:1px">Xem chi tiết →</span>
                                 </div>
                               </sc-for>
                             </div>
@@ -555,7 +555,7 @@
                           </div>
                           <div style="font-size:12.5px;color:#7E8C95;margin-top:3px">{{ m.productDetail.hang }} · {{ m.productDetail.loai }}</div>
                         </div>
-                        <span style="flex:none;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;color:#0070B0;background:#E8F2F8;border:1px solid #D2E5F1;padding:6px 11px;border-radius:9px">{{ m.productDetail.gia }}</span>
+                        <span style="flex:none;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;color:#36677D;background:#E7F2F5;border:1px solid #94BFCE;padding:6px 11px;border-radius:9px">{{ m.productDetail.gia }}</span>
                       </div>
                       <div style="padding:6px 17px 14px 17px">
                         <sc-for list="{{ m.productDetail.specs }}" as="sp" hint-placeholder-count="5">
@@ -570,7 +570,7 @@
 
                   <!-- WARN -->
                   <sc-if value="{{ m.warn }}" hint-placeholder-val="{{ true }}">
-                    <div style="margin-top:10px;background:#FDF7EA;border:1px solid #F0E2BE;border-radius:10px;padding:11px 14px;font-size:12.5px;line-height:1.5;color:#8A6A22">⚠️ {{ m.warn }}</div>
+                    <div style="margin-top:10px;background:#FCF8F2;border:1px solid #E7DBC4;border-radius:10px;padding:11px 14px;font-size:12.5px;line-height:1.5;color:#725824">⚠️ {{ m.warn }}</div>
                   </sc-if>
 
                   <!-- DISTRIBUTOR -->
@@ -581,7 +581,7 @@
                           <div style="font-size:17px;font-weight:800;color:#16242E;letter-spacing:-.2px">{{ m.distributor.ten }}</div>
                           <div style="font-size:12.5px;color:#7E8C95;margin-top:2px">{{ m.distributor.khu_vuc }} · {{ m.distributor.loai }}</div>
                         </div>
-                        <span style="flex:none;font-size:11px;font-weight:700;color:#5E8E28;background:#F1F7E8;border:1px solid #DDEBC8;padding:5px 11px;border-radius:20px">{{ m.distributor.congNoNote }}</span>
+                        <span style="flex:none;font-size:11px;font-weight:700;color:#4C825C;background:#EDF5F0;border:1px solid #CADDCF;padding:5px 11px;border-radius:20px">{{ m.distributor.congNoNote }}</span>
                       </div>
 
                       <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:1px;background:#EEF2F5">
@@ -612,7 +612,7 @@
                           <sc-for list="{{ m.distributor.chuLuc }}" as="c" hint-placeholder-count="3">
                             <div style="display:flex;align-items:center;gap:12px">
                               <span style="width:210px;flex:none;font-size:12.5px;color:#3A4A53">{{ c.ten }}</span>
-                              <div style="flex:1;height:8px;background:#EEF2F5;border-radius:5px;overflow:hidden"><div style="height:100%;border-radius:5px;background:#0070B0;width: {{ c.pct }}%"></div></div>
+                              <div style="flex:1;height:8px;background:#EEF2F5;border-radius:5px;overflow:hidden"><div style="height:100%;border-radius:5px;background:#36677D;width: {{ c.pct }}%"></div></div>
                               <span style="width:38px;text-align:right;font-family:'JetBrains Mono',monospace;font-size:12px;color:#5E6E78">{{ c.pct }}%</span>
                             </div>
                           </sc-for>
@@ -621,18 +621,18 @@
 
                       <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#EEF2F5;border-top:1px solid #EEF2F5">
                         <div style="background:#fff;padding:15px 17px">
-                          <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#0070B0;text-transform:uppercase;margin-bottom:9px">↻ Gợi ý đơn kế tiếp</div>
+                          <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#36677D;text-transform:uppercase;margin-bottom:9px">↻ Gợi ý đơn kế tiếp</div>
                           <div style="display:flex;flex-direction:column;gap:9px">
                             <sc-for list="{{ m.distributor.goiYDon }}" as="g" hint-placeholder-count="2">
                               <div>
-                                <div style="display:flex;justify-content:space-between;gap:8px"><span style="font-size:13px;font-weight:600;color:#23323B">{{ g.ten }}</span><span style="font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;color:#0070B0">{{ g.sl }}</span></div>
+                                <div style="display:flex;justify-content:space-between;gap:8px"><span style="font-size:13px;font-weight:600;color:#23323B">{{ g.ten }}</span><span style="font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;color:#36677D">{{ g.sl }}</span></div>
                                 <div style="font-size:11.5px;color:#90A0A9;margin-top:1px">{{ g.lyDo }}</div>
                               </div>
                             </sc-for>
                           </div>
                         </div>
                         <div style="background:#fff;padding:15px 17px">
-                          <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#5E8E28;text-transform:uppercase;margin-bottom:9px">↗ Cơ hội bán thêm</div>
+                          <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#4C825C;text-transform:uppercase;margin-bottom:9px">↗ Cơ hội bán thêm</div>
                           <div style="display:flex;flex-direction:column;gap:9px">
                             <sc-for list="{{ m.distributor.crossSell }}" as="x" hint-placeholder-count="2">
                               <div>
@@ -651,7 +651,7 @@
                     <div style="margin-top:12px;display:flex;flex-direction:column;gap:11px">
 
                       <sc-if value="{{ m.distributorPlus.regionAlert }}" hint-placeholder-val="{{ true }}">
-                        <div style="background:#FFF7ED;border:1px solid #F3D7AE;border-left:4px solid #E0902A;border-radius:10px;padding:11px 14px;font-size:12.5px;line-height:1.5;color:#7A5A1E"><b style="color:#B5731A">Bối cảnh vùng:</b> khu vực này đang có cảnh báo <b>{{ m.distributorPlus.regionAlert }}</b> — nhu cầu phòng dịch đang tăng.</div>
+                        <div style="background:#FAF5ED;border:1px solid #EADBC4;border-left:4px solid #C69D5D;border-radius:10px;padding:11px 14px;font-size:12.5px;line-height:1.5;color:#9A723C"><b style="color:#8A6635">Bối cảnh vùng:</b> khu vực này đang có cảnh báo <b>{{ m.distributorPlus.regionAlert }}</b> — nhu cầu phòng dịch đang tăng.</div>
                       </sc-if>
 
                       <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px">
@@ -690,14 +690,14 @@
                         <div style="padding:13px 17px;display:flex;flex-direction:column;gap:11px">
                           <sc-for list="{{ m.distributorPlus.objections }}" as="o" hint-placeholder-count="3">
                             <div>
-                              <span style="display:inline-block;font-size:11px;font-weight:700;color:#C0392B;background:#FCEEEC;border:1px solid #F2C9C4;padding:3px 10px;border-radius:6px;margin-bottom:4px">“{{ o.q }}”</span>
+                              <span style="display:inline-block;font-size:11px;font-weight:700;color:#9E5564;background:#F8EEF0;border:1px solid #E8C8CE;padding:3px 10px;border-radius:6px;margin-bottom:4px">“{{ o.q }}”</span>
                               <div style="font-size:12.5px;color:#41525B;line-height:1.5">{{ o.a }}</div>
                             </div>
                           </sc-for>
                         </div>
                       </div>
 
-                      <div style="background:#F1F7E8;border:1px solid #D6E7BD;border-left:4px solid #80C040;border-radius:10px;padding:11px 14px;font-size:12.5px;line-height:1.5;color:#3C4F2A"><b style="color:#4F7A1F">Task follow-up:</b> {{ m.distributorPlus.followUp }}</div>
+                      <div style="background:#EDF5F0;border:1px solid #CADDCF;border-left:4px solid #5C926D;border-radius:10px;padding:11px 14px;font-size:12.5px;line-height:1.5;color:#2C3A2B"><b style="color:#4C825C">Task follow-up:</b> {{ m.distributorPlus.followUp }}</div>
 
                     </div>
                   </sc-if>
@@ -713,7 +713,7 @@
                           </div>
                           <div style="font-size:12px;color:#7E8C95;margin-top:3px">{{ m.draftOrder.customer }} · {{ m.draftOrder.reason }}</div>
                         </div>
-                        <span style="flex:none;font-size:11px;font-weight:700;color:#8A6A22;background:#FDF7EA;border:1px solid #F0E2BE;padding:5px 11px;border-radius:20px">{{ m.draftOrder.status }} · {{ m.draftOrder.created }}</span>
+                        <span style="flex:none;font-size:11px;font-weight:700;color:#725824;background:#FCF8F2;border:1px solid #E7DBC4;padding:5px 11px;border-radius:20px">{{ m.draftOrder.status }} · {{ m.draftOrder.created }}</span>
                       </div>
                       <sc-for list="{{ m.draftOrder.lines }}" as="l" hint-placeholder-count="3">
                         <div style="display:flex;align-items:center;gap:12px;padding:11px 17px;border-bottom:1px solid #F2F5F7">
@@ -722,13 +722,13 @@
                             <div style="font-size:13px;font-weight:600;color:#1C2B34;line-height:1.3">{{ l.ten }}</div>
                             <div style="font-size:11px;color:#90A0A9;margin-top:1px">{{ l.role }}</div>
                           </div>
-                          <span style="flex:none;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;color:#0070B0">{{ l.qty }}</span>
+                          <span style="flex:none;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;color:#36677D">{{ l.qty }}</span>
                         </div>
                       </sc-for>
-                      <div style="padding:11px 17px;background:#FDF7EA;border-top:1px solid #F0E2BE;font-size:12px;line-height:1.5;color:#8A6A22">⚠️ {{ m.draftOrder.warn }}</div>
+                      <div style="padding:11px 17px;background:#FCF8F2;border-top:1px solid #E7DBC4;font-size:12px;line-height:1.5;color:#725824">⚠️ {{ m.draftOrder.warn }}</div>
                       <div style="display:flex;justify-content:flex-end;gap:9px;padding:12px 17px;border-top:1px solid #EEF2F5">
                         <button onClick="{{ m.draftOrder.copy }}" style="font-family:'Be Vietnam Pro';font-size:12.5px;font-weight:600;color:#5E6E78;background:#fff;border:1px solid #E1E8ED;padding:8px 14px;border-radius:9px;cursor:pointer" style-hover="background:#F4F8FA;border-color:#CDD8DF">Copy đơn</button>
-                        <button onClick="{{ m.draftOrder.save }}" style="font-family:'Be Vietnam Pro';font-size:12.5px;font-weight:700;color:#fff;background:#0070B0;border:none;padding:8px 16px;border-radius:9px;cursor:pointer" style-hover="background:#005A8C">Lưu đơn nháp</button>
+                        <button onClick="{{ m.draftOrder.save }}" style="font-family:'Be Vietnam Pro';font-size:12.5px;font-weight:700;color:#fff;background:#36677D;border:none;padding:8px 16px;border-radius:9px;cursor:pointer" style-hover="background:#13212C">Lưu đơn nháp</button>
                       </div>
                     </div>
                   </sc-if>
@@ -747,7 +747,7 @@
                         <span style="flex:none;font-size:11px;font-weight:700;color:#fff;padding:5px 11px;border-radius:20px;background: {{ m.expertTicket.statusColor }}">{{ m.expertTicket.status }}</span>
                       </div>
                       <div style="display:flex;gap:9px;padding:11px 17px;border-bottom:1px solid #EEF2F5;flex-wrap:wrap">
-                        <span style="font-size:11px;font-weight:700;color: {{ m.expertTicket.slaColor }};background:#FFF7ED;border:1px solid #F3D7AE;padding:5px 11px;border-radius:20px">⏱ {{ m.expertTicket.sla }}</span>
+                        <span style="font-size:11px;font-weight:700;color: {{ m.expertTicket.slaColor }};background:#FAF5ED;border:1px solid #EADBC4;padding:5px 11px;border-radius:20px">⏱ {{ m.expertTicket.sla }}</span>
                         <span style="font-size:11px;font-weight:600;color:#5E6E78;background:#F4F7F9;border:1px solid #E4EBEF;padding:5px 11px;border-radius:20px">Tạo: {{ m.expertTicket.created }}</span>
                       </div>
                       <div style="padding:6px 17px 8px">
@@ -760,7 +760,7 @@
                       </div>
                       <div style="display:flex;justify-content:flex-end;gap:9px;padding:12px 17px;border-top:1px solid #EEF2F5">
                         <button onClick="{{ m.expertTicket.copy }}" style="font-family:'Be Vietnam Pro';font-size:12.5px;font-weight:600;color:#5E6E78;background:#fff;border:1px solid #E1E8ED;padding:8px 14px;border-radius:9px;cursor:pointer" style-hover="background:#F4F8FA;border-color:#CDD8DF">Copy ticket</button>
-                        <button onClick="{{ m.expertTicket.save }}" style="font-family:'Be Vietnam Pro';font-size:12.5px;font-weight:700;color:#fff;background:#0070B0;border:none;padding:8px 16px;border-radius:9px;cursor:pointer" style-hover="background:#005A8C">Lưu ticket</button>
+                        <button onClick="{{ m.expertTicket.save }}" style="font-family:'Be Vietnam Pro';font-size:12.5px;font-weight:700;color:#fff;background:#36677D;border:none;padding:8px 16px;border-radius:9px;cursor:pointer" style-hover="background:#13212C">Lưu ticket</button>
                       </div>
                     </div>
                   </sc-if>
@@ -770,11 +770,11 @@
                     <div style="margin-top:12px;background:#fff;border:1px solid #E4EBEF;border-radius:14px;overflow:hidden">
                       <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 17px;border-bottom:1px solid #EEF2F5">
                         <span style="font-size:13px;font-weight:700;color:#23323B">Tin nhắn gửi khách</span>
-                        <span style="flex:none;font-size:11px;font-weight:700;color:#6A52B3;background:#F0EEF8;border:1px solid #DAD2EE;padding:4px 11px;border-radius:20px">{{ m.customerMsg.channel }}</span>
+                        <span style="flex:none;font-size:11px;font-weight:700;color:#6E5A9D;background:#F5F3F9;border:1px solid #DFD9EC;padding:4px 11px;border-radius:20px">{{ m.customerMsg.channel }}</span>
                       </div>
-                      <div style="padding:15px 17px"><div style="background:#F0F6FA;border:1px solid #D7E8F2;border-radius:10px 10px 10px 2px;padding:13px 15px;font-size:13px;line-height:1.62;color:#2C3A43">{{ m.customerMsg.text }}</div></div>
+                      <div style="padding:15px 17px"><div style="background:#F0F6FA;border:1px solid #94BFCE;border-radius:10px 10px 10px 2px;padding:13px 15px;font-size:13px;line-height:1.62;color:#2C3A43">{{ m.customerMsg.text }}</div></div>
                       <div style="display:flex;justify-content:flex-end;padding:0 17px 14px">
-                        <button onClick="{{ m.customerMsg.copy }}" style="font-family:'Be Vietnam Pro';font-size:12.5px;font-weight:700;color:#fff;background:#6A52B3;border:none;padding:8px 16px;border-radius:9px;cursor:pointer" style-hover="filter:brightness(.95)">Copy tin nhắn</button>
+                        <button onClick="{{ m.customerMsg.copy }}" style="font-family:'Be Vietnam Pro';font-size:12.5px;font-weight:700;color:#fff;background:#6E5A9D;border:none;padding:8px 16px;border-radius:9px;cursor:pointer" style-hover="filter:brightness(.95)">Copy tin nhắn</button>
                       </div>
                     </div>
                   </sc-if>
@@ -782,7 +782,7 @@
                   <!-- MARKET -->
                   <sc-if value="{{ m.marketInfo }}" hint-placeholder-val="{{ true }}">
                     <div style="margin-top:12px;background:#F7FAFC;border:1px dashed #CBDCE6;border-radius:12px;padding:13px 15px">
-                      <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#0070B0;text-transform:uppercase;margin-bottom:5px">Thông tin thị trường</div>
+                      <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#36677D;text-transform:uppercase;margin-bottom:5px">Thông tin thị trường</div>
                       <div style="font-size:12.5px;line-height:1.55;color:#41525B">{{ m.marketInfo }}</div>
                     </div>
                   </sc-if>
@@ -795,7 +795,7 @@
                         <span style="display:inline-flex;align-items:center;gap:7px;font-size:11px;background:#fff;border:1px solid #E4EBEF;padding:4px 9px;border-radius:7px">
                           <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#8B99A2" stroke-width="2" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="2"></rect><line x1="9" y1="9" x2="15" y2="9" stroke-linecap="round"></line><line x1="9" y1="13" x2="15" y2="13" stroke-linecap="round"></line></svg>
                           <span style="font-family:'JetBrains Mono',monospace;color:#5E6E78">{{ src.t }}</span>
-                          <span style="font-size:9.5px;font-weight:700;color:#5E8E28;background:#F1F7E8;padding:1px 6px;border-radius:5px">{{ src.k }}</span>
+                          <span style="font-size:9.5px;font-weight:700;color:#4C825C;background:#EDF5F0;padding:1px 6px;border-radius:5px">{{ src.k }}</span>
                         </span>
                       </sc-for>
                     </div>
@@ -803,9 +803,9 @@
 
                   <!-- SUGGESTION -->
                   <sc-if value="{{ m.suggestion }}" hint-placeholder-val="{{ true }}">
-                    <div style="margin-top:12px;background:#F1F7E8;border:1px solid #D6E7BD;border-left:4px solid #80C040;border-radius:10px;padding:13px 15px">
-                      <div style="font-size:12px;font-weight:800;color:#4F7A1F;letter-spacing:.2px;margin-bottom:4px">👉 Gợi ý cho Sales</div>
-                      <div style="font-size:13px;line-height:1.6;color:#3C4F2A;font-weight:500">{{ m.suggestion }}</div>
+                    <div style="margin-top:12px;background:#EDF5F0;border:1px solid #CADDCF;border-left:4px solid #5C926D;border-radius:10px;padding:13px 15px">
+                      <div style="font-size:12px;font-weight:800;color:#4C825C;letter-spacing:.2px;margin-bottom:4px">👉 Gợi ý cho Sales</div>
+                      <div style="font-size:13px;line-height:1.6;color:#2C3A2B;font-weight:500">{{ m.suggestion }}</div>
                     </div>
                   </sc-if>
 
@@ -825,7 +825,7 @@
       <div style="max-width:none;margin:0;padding:0 36px">
         <div class="sm-inputbox" style="display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #DDE5EA;border-radius:14px;padding:7px 7px 7px 16px;box-shadow:0 2px 10px rgba(22,36,46,.04)">
           <input value="{{ inputVal }}" onChange="{{ onInput }}" onKeyDown="{{ onKey }}" placeholder="Mô tả triệu chứng, hỏi sản phẩm, hoặc tên nhà phân phối…" style="flex:1;border:none;outline:none;font-family:'Be Vietnam Pro';font-size:14px;color:#16242E;background:transparent;padding:8px 0">
-          <button onClick="{{ send }}" style="flex:none;width:40px;height:40px;border-radius:11px;border:none;background:#0070B0;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.15s" style-hover="background:#005A8C">
+          <button onClick="{{ send }}" style="flex:none;width:40px;height:40px;border-radius:11px;border:none;background:#36677D;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.15s" style-hover="background:#13212C">
             <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg>
           </button>
         </div>
@@ -840,12 +840,12 @@
 
         <div style="flex:none;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 20px;background:#fff;border-bottom:1px solid #E1E8ED;flex-wrap:wrap">
           <div style="display:flex;gap:9px;flex-wrap:wrap">
-            <span class="mkt-chip"><span style="color:#0070B0">Tổng cảnh báo</span> <b style="font-family:'JetBrains Mono',monospace;color:#16242E">{{ stats.total }}</b></span>
-            <span class="mkt-chip"><span style="color:#C0392B">Bệnh nổi bật</span> <b style="color:#16242E">{{ stats.topBenh }}</b></span>
-            <span class="mkt-chip"><span style="color:#5E8E28">Tỉnh nổi bật</span> <b style="color:#16242E">{{ stats.topTinh }}</b></span>
-            <span class="mkt-chip"><span style="color:#A8322B">Mức nặng</span> <b style="font-family:'JetBrains Mono',monospace;color:#16242E">{{ stats.nang }}</b></span>
+            <span class="mkt-chip"><span style="color:#36677D">Tổng cảnh báo</span> <b style="font-family:'JetBrains Mono',monospace;color:#16242E">{{ stats.total }}</b></span>
+            <span class="mkt-chip"><span style="color:#9E5564">Bệnh nổi bật</span> <b style="color:#16242E">{{ stats.topBenh }}</b></span>
+            <span class="mkt-chip"><span style="color:#4C825C">Tỉnh nổi bật</span> <b style="color:#16242E">{{ stats.topTinh }}</b></span>
+            <span class="mkt-chip"><span style="color:#8B4F58">Mức nặng</span> <b style="font-family:'JetBrains Mono',monospace;color:#16242E">{{ stats.nang }}</b></span>
           </div>
-          <button onClick="{{ openForm }}" style="flex:none;display:inline-flex;align-items:center;gap:7px;font-family:'Be Vietnam Pro';font-size:13px;font-weight:700;color:#fff;background:#0070B0;border:none;padding:10px 15px;border-radius:11px;cursor:pointer" style-hover="background:#005A8C">＋ Nhập thông tin thị trường</button>
+          <button onClick="{{ openForm }}" style="flex:none;display:inline-flex;align-items:center;gap:7px;font-family:'Be Vietnam Pro';font-size:13px;font-weight:700;color:#fff;background:#36677D;border:none;padding:10px 15px;border-radius:11px;cursor:pointer" style-hover="background:#13212C">＋ Nhập thông tin thị trường</button>
         </div>
 
         <div style="flex:1;position:relative;min-height:0">
@@ -906,11 +906,11 @@
           <span style="display:block;font-size:12px;font-weight:600;color:#5E6E78;margin-bottom:5px">Ghi chú mô tả</span>
           <textarea value="{{ form.note }}" onChange="{{ setNote }}" rows="3" placeholder="Mô tả triệu chứng, số ca, quy mô đàn…" class="sm-field" style="width:100%;font-family:'Be Vietnam Pro';font-size:13.5px;color:#16242E;padding:9px 11px;border:1px solid #DDE5EA;border-radius:9px;resize:vertical"></textarea>
         </label>
-        <sc-if value="{{ formError }}" hint-placeholder-val="{{ true }}"><div style="font-size:12px;color:#C0392B">{{ formError }}</div></sc-if>
+        <sc-if value="{{ formError }}" hint-placeholder-val="{{ true }}"><div style="font-size:12px;color:#9E5564">{{ formError }}</div></sc-if>
       </div>
       <div style="display:flex;justify-content:flex-end;gap:9px;padding:14px 20px;border-top:1px solid #EEF2F5">
         <button onClick="{{ closeForm }}" style="font-family:'Be Vietnam Pro';font-size:13px;font-weight:600;color:#5E6E78;background:#fff;border:1px solid #E1E8ED;padding:9px 15px;border-radius:10px;cursor:pointer">Hủy</button>
-        <button onClick="{{ submitAlert }}" style="font-family:'Be Vietnam Pro';font-size:13px;font-weight:700;color:#fff;background:#0070B0;border:none;padding:9px 17px;border-radius:10px;cursor:pointer">Lưu cảnh báo</button>
+        <button onClick="{{ submitAlert }}" style="font-family:'Be Vietnam Pro';font-size:13px;font-weight:700;color:#fff;background:#36677D;border:none;padding:9px 17px;border-radius:10px;cursor:pointer">Lưu cảnh báo</button>
       </div>
     </div>
   </div>
@@ -978,11 +978,11 @@
           </label>
         </div>
         <label style="display:block">
-          <span style="display:block;font-size:12px;font-weight:600;color:#5E6E78;margin-bottom:5px">Triệu chứng <span style="color:#C0392B">*</span></span>
+          <span style="display:block;font-size:12px;font-weight:600;color:#5E6E78;margin-bottom:5px">Triệu chứng <span style="color:#9E5564">*</span></span>
           <textarea value="{{ caseForm.symptoms }}" onChange="{{ setCaseSymptoms }}" rows="2" placeholder="VD: sốt 41 độ, bỏ ăn, da tai bụng tím, chết nhanh…" class="sm-field" style="width:100%;font-family:'Be Vietnam Pro';font-size:13.5px;color:#16242E;padding:9px 11px;border:1px solid #DDE5EA;border-radius:9px;resize:vertical"></textarea>
           <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px">
             <sc-for list="{{ symptomChips }}" as="s" hint-placeholder-count="6">
-              <button onClick="{{ s.add }}" style="font-family:'Be Vietnam Pro';font-size:11.5px;font-weight:600;color:#0070B0;background:#EDF5FA;border:1px solid #D7E8F2;padding:5px 10px;border-radius:8px;cursor:pointer" style-hover="background:#E1EFF7">＋ {{ s.label }}</button>
+              <button onClick="{{ s.add }}" style="font-family:'Be Vietnam Pro';font-size:11.5px;font-weight:600;color:#36677D;background:#E7F2F5;border:1px solid #94BFCE;padding:5px 10px;border-radius:8px;cursor:pointer" style-hover="background:#DCEEF2">＋ {{ s.label }}</button>
             </sc-for>
           </div>
         </label>
@@ -990,11 +990,11 @@
           <span style="display:block;font-size:12px;font-weight:600;color:#5E6E78;margin-bottom:5px">Đã dùng thuốc / vaccine</span>
           <textarea value="{{ caseForm.usedProducts }}" onChange="{{ setCaseUsed }}" rows="2" placeholder="Để tránh gợi ý trùng/sai — VD: đã tiêm vaccine dịch tả cổ điển tháng trước" class="sm-field" style="width:100%;font-family:'Be Vietnam Pro';font-size:13.5px;color:#16242E;padding:9px 11px;border:1px solid #DDE5EA;border-radius:9px;resize:vertical"></textarea>
         </label>
-        <sc-if value="{{ caseError }}" hint-placeholder-val="{{ true }}"><div style="font-size:12px;color:#C0392B">{{ caseError }}</div></sc-if>
+        <sc-if value="{{ caseError }}" hint-placeholder-val="{{ true }}"><div style="font-size:12px;color:#9E5564">{{ caseError }}</div></sc-if>
       </div>
       <div style="display:flex;justify-content:flex-end;gap:9px;padding:14px 20px;border-top:1px solid #EEF2F5">
         <button onClick="{{ closeCaseForm }}" style="font-family:'Be Vietnam Pro';font-size:13px;font-weight:600;color:#5E6E78;background:#fff;border:1px solid #E1E8ED;padding:9px 15px;border-radius:10px;cursor:pointer">Hủy</button>
-        <button onClick="{{ createCase }}" style="font-family:'Be Vietnam Pro';font-size:13px;font-weight:700;color:#fff;background:#0070B0;border:none;padding:9px 17px;border-radius:10px;cursor:pointer">Tạo ca &amp; chẩn đoán</button>
+        <button onClick="{{ createCase }}" style="font-family:'Be Vietnam Pro';font-size:13px;font-weight:700;color:#fff;background:#36677D;border:none;padding:9px 17px;border-radius:10px;cursor:pointer">Tạo ca &amp; chẩn đoán</button>
       </div>
     </div>
   </div>
@@ -1042,7 +1042,7 @@
         </div>
         <sc-if value="{{ qtyResult }}" hint-placeholder-val="{{ true }}">
           <div style="background:#F7FAFC;border:1px solid #E4EBEF;border-radius:12px;overflow:hidden">
-            <div style="padding:11px 15px;border-bottom:1px solid #EEF2F5;font-size:11px;font-weight:700;letter-spacing:.5px;color:#0070B0;text-transform:uppercase">Ước tính demo</div>
+            <div style="padding:11px 15px;border-bottom:1px solid #EEF2F5;font-size:11px;font-weight:700;letter-spacing:.5px;color:#36677D;text-transform:uppercase">Ước tính demo</div>
             <div style="padding:4px 15px 10px">
               <sc-for list="{{ qtyResult.rows }}" as="r" hint-placeholder-count="5">
                 <div style="display:flex;justify-content:space-between;gap:14px;padding:7px 0;border-bottom:1px solid #F2F5F7">
@@ -1051,13 +1051,13 @@
                 </div>
               </sc-for>
             </div>
-            <div style="padding:10px 15px;background:#FDF7EA;border-top:1px solid #F0E2BE;font-size:11.5px;line-height:1.5;color:#8A6A22">⚠️ {{ qtyResult.warn }}</div>
+            <div style="padding:10px 15px;background:#FCF8F2;border-top:1px solid #E7DBC4;font-size:11.5px;line-height:1.5;color:#725824">⚠️ {{ qtyResult.warn }}</div>
           </div>
         </sc-if>
       </div>
       <div style="display:flex;justify-content:flex-end;gap:9px;padding:14px 20px;border-top:1px solid #EEF2F5">
         <button onClick="{{ closeQty }}" style="font-family:'Be Vietnam Pro';font-size:13px;font-weight:600;color:#5E6E78;background:#fff;border:1px solid #E1E8ED;padding:9px 15px;border-radius:10px;cursor:pointer">Đóng</button>
-        <button onClick="{{ qtyResult.copy }}" style="font-family:'Be Vietnam Pro';font-size:13px;font-weight:700;color:#fff;background:#0070B0;border:none;padding:9px 17px;border-radius:10px;cursor:pointer">Copy ước tính</button>
+        <button onClick="{{ qtyResult.copy }}" style="font-family:'Be Vietnam Pro';font-size:13px;font-weight:700;color:#fff;background:#36677D;border:none;padding:9px 17px;border-radius:10px;cursor:pointer">Copy ước tính</button>
       </div>
     </div>
   </div>
@@ -1091,7 +1091,7 @@
                   <div style="font-size:13px;font-weight:600;color:#23323B">{{ t.ten }}</div>
                   <div style="font-size:11px;color:#90A0A9;margin-top:1px">{{ t.khu_vuc }} · {{ t.loai }}</div>
                 </div>
-                <sc-if value="{{ t.near }}" hint-placeholder-val="{{ true }}"><span style="flex:none;font-size:10px;font-weight:700;color:#5E8E28;background:#F1F7E8;border:1px solid #DDEBC8;padding:3px 9px;border-radius:20px">Trong vùng</span></sc-if>
+                <sc-if value="{{ t.near }}" hint-placeholder-val="{{ true }}"><span style="flex:none;font-size:10px;font-weight:700;color:#4C825C;background:#EDF5F0;border:1px solid #CADDCF;padding:3px 9px;border-radius:20px">Trong vùng</span></sc-if>
               </div>
             </sc-for>
           </div>
@@ -1100,18 +1100,18 @@
           <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#A0AEB6;text-transform:uppercase;margin-bottom:9px">Sản phẩm nên chào</div>
           <div style="display:flex;flex-wrap:wrap;gap:7px">
             <sc-for list="{{ campaignView.skus }}" as="p" hint-placeholder-count="3">
-              <span style="display:inline-flex;align-items:center;gap:7px;font-size:12px;color:#3A4A53;background:#fff;border:1px solid #E4EBEF;padding:6px 11px;border-radius:9px"><span style="width:6px;height:6px;border-radius:50%;background:#0070B0"></span>{{ p.ten }} <span style="font-size:10px;color:#9AA8B1">{{ p.loai }}</span></span>
+              <span style="display:inline-flex;align-items:center;gap:7px;font-size:12px;color:#3A4A53;background:#fff;border:1px solid #E4EBEF;padding:6px 11px;border-radius:9px"><span style="width:6px;height:6px;border-radius:50%;background:#36677D"></span>{{ p.ten }} <span style="font-size:10px;color:#9AA8B1">{{ p.loai }}</span></span>
             </sc-for>
           </div>
         </div>
         <div>
           <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#A0AEB6;text-transform:uppercase;margin-bottom:9px">Tin nhắn mẫu</div>
-          <div style="background:#F0F6FA;border:1px solid #D7E8F2;border-radius:10px 10px 10px 2px;padding:13px 15px;font-size:13px;line-height:1.6;color:#2C3A43">{{ campaignView.msg }}</div>
+          <div style="background:#F0F6FA;border:1px solid #94BFCE;border-radius:10px 10px 10px 2px;padding:13px 15px;font-size:13px;line-height:1.6;color:#2C3A43">{{ campaignView.msg }}</div>
         </div>
       </div>
       <div style="display:flex;justify-content:flex-end;gap:9px;padding:14px 20px;border-top:1px solid #EEF2F5">
         <button onClick="{{ campaignView.copy }}" style="font-family:'Be Vietnam Pro';font-size:13px;font-weight:600;color:#5E6E78;background:#fff;border:1px solid #E1E8ED;padding:9px 15px;border-radius:10px;cursor:pointer">Copy tin nhắn</button>
-        <button onClick="{{ campaignView.save }}" style="font-family:'Be Vietnam Pro';font-size:13px;font-weight:700;color:#fff;background:#0070B0;border:none;padding:9px 17px;border-radius:10px;cursor:pointer">Lưu chiến dịch</button>
+        <button onClick="{{ campaignView.save }}" style="font-family:'Be Vietnam Pro';font-size:13px;font-weight:700;color:#fff;background:#36677D;border:none;padding:9px 17px;border-radius:10px;cursor:pointer">Lưu chiến dịch</button>
       </div>
     </div>
   </div>
@@ -1193,7 +1193,7 @@ class Component extends DCLogic {
       if (e.button != null && e.button !== 0) return;
       const r = document.createElement('span');
       const s = 16;
-      r.style.cssText = 'position:fixed;left:' + (e.clientX - s / 2) + 'px;top:' + (e.clientY - s / 2) + 'px;width:' + s + 'px;height:' + s + 'px;border-radius:50%;background:radial-gradient(circle,rgba(0,112,176,.30),rgba(0,112,176,0) 70%);pointer-events:none;z-index:99999;transform:scale(0);opacity:.9';
+      r.style.cssText = 'position:fixed;left:' + (e.clientX - s / 2) + 'px;top:' + (e.clientY - s / 2) + 'px;width:' + s + 'px;height:' + s + 'px;border-radius:50%;background:radial-gradient(circle,rgba(54,103,125,.30),rgba(54,103,125,0) 70%);pointer-events:none;z-index:99999;transform:scale(0);opacity:.9';
       document.body.appendChild(r);
       requestAnimationFrame(() => {
         r.style.transition = 'transform .5s cubic-bezier(.2,.7,.3,1), opacity .5s ease-out';
@@ -1234,17 +1234,17 @@ class Component extends DCLogic {
 
   tabStyle(active){
     return "font-family:'Be Vietnam Pro';font-size:12.5px;font-weight:600;border:none;padding:7px 13px;border-radius:8px;cursor:pointer;transition:.15s;" +
-      (active ? "background:#0070B0;color:#fff" : "background:transparent;color:#5E6E78");
+      (active ? "background:#36677D;color:#fff" : "background:transparent;color:#5E6E78");
   }
 
   userAvatarStyle(on){
-    return "width:36px;height:36px;flex:none;border-radius:50%;background:#0070B0;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;font-family:'Be Vietnam Pro';cursor:pointer;outline:none;transition:.15s;" +
-      (on ? "border:2px solid #80C040;box-shadow:0 0 0 3px rgba(128,192,64,.30)" : "border:2px solid transparent;box-shadow:none");
+    return "width:36px;height:36px;flex:none;border-radius:50%;background:#36677D;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;font-family:'Be Vietnam Pro';cursor:pointer;outline:none;transition:.15s;" +
+      (on ? "border:2px solid #5C926D;box-shadow:0 0 0 3px rgba(128,192,64,.30)" : "border:2px solid transparent;box-shadow:none");
   }
 
   segStyle(active){
     return "flex:1;font-family:'Be Vietnam Pro';font-size:12px;font-weight:600;border:none;padding:7px 6px;border-radius:8px;cursor:pointer;transition:.15s;" +
-      (active ? "background:#0070B0;color:#fff" : "background:transparent;color:#5E6E78");
+      (active ? "background:#36677D;color:#fff" : "background:transparent;color:#5E6E78");
   }
 
   asideStyle(open){
@@ -1319,7 +1319,7 @@ class Component extends DCLogic {
   marketRecent(){
     const al = this.state.alerts || [];
     const lab = { nhe: 'Nhẹ', trung_binh: 'TB', nang: 'Nặng' };
-    const col = { nhe: '#5E8E28', trung_binh: '#E0A02A', nang: '#C0392B' };
+    const col = { nhe: '#4C825C', trung_binh: '#DEB068', nang: '#9E5564' };
     return al.slice(-7).reverse().map(a => ({
       tinh: a.tinh, benh: this.clip(a.ten_benh || '', 24),
       muc: lab[a.muc_do] || a.muc_do, color: col[a.muc_do] || '#8B99A2',
@@ -1431,7 +1431,7 @@ class Component extends DCLogic {
     return ({ vaccine: 'Vaccine', khang_sinh: 'Kháng sinh', sat_trung: 'Sát trùng', ho_tro: 'Hỗ trợ', bo_tro: 'Bổ trợ', dac_tri: 'Đặc trị' })[loai] || 'Sản phẩm';
   }
   mucLabel(m){ return ({ nguy_hiem: 'Nguy hiểm', nang: 'Nặng', trung_binh: 'Trung bình', nhe: 'Nhẹ' })[m] || m; }
-  mucColor(m){ return (m === 'nguy_hiem' || m === 'nang') ? '#C0392B' : (m === 'trung_binh' ? '#E0A02A' : '#5E8E28'); }
+  mucColor(m){ return (m === 'nguy_hiem' || m === 'nang') ? '#9E5564' : (m === 'trung_binh' ? '#C69D5D' : '#4C825C'); }
 
   // ============ TOOLS ============
   productCard(ma){
@@ -1464,7 +1464,7 @@ class Component extends DCLogic {
     }
     const d = best.d;
     const conf = Math.max(35, Math.round(best.conf * 100));
-    const confColor = conf >= 70 ? '#5E8E28' : (conf >= 45 ? '#E0A02A' : '#C0392B');
+    const confColor = conf >= 70 ? '#4C825C' : (conf >= 45 ? '#DEB068' : '#9E5564');
 
     // differential = runner-up diseases that also matched
     const phanBiet = scored.slice(1).filter(x => x.matched > 0).slice(0, 3).map(x => x.d.ten_benh);
@@ -1650,7 +1650,7 @@ class Component extends DCLogic {
       m: 'T' + parseInt(m.split('-')[1], 10),
       v: vals[i],
       h: Math.max(4, Math.round(vals[i] / maxV * 116)),
-      color: i === months.length - 1 ? '#80C040' : '#9FC9E0'
+      color: i === months.length - 1 ? '#5C926D' : '#9FC9E0'
     }));
 
     // top products
@@ -1875,10 +1875,10 @@ class Component extends DCLogic {
       if (/chet nhanh|chet hang loat/.test(this.norm(caseObj.symptoms || ''))){ level = Math.max(level, 3); reasons.push('chết nhanh'); }
     }
     const map = [
-      { label: 'Rủi ro thấp', color: '#5E8E28', bg: '#F1F7E8', bd: '#D6E7BD' },
-      { label: 'Cần theo dõi', color: '#E0A02A', bg: '#FFF7ED', bd: '#F3D7AE' },
-      { label: 'Rủi ro cao', color: '#D9822B', bg: '#FBEFE3', bd: '#F0CFA8' },
-      { label: 'Khẩn cấp', color: '#C0392B', bg: '#FCEEEC', bd: '#F2C9C4' }
+      { label: 'Rủi ro thấp', color: '#4C825C', bg: '#EDF5F0', bd: '#CADDCF' },
+      { label: 'Cần theo dõi', color: '#B4853A', bg: '#FAF5ED', bd: '#EADBC4' },
+      { label: 'Rủi ro cao', color: '#B4853A', bg: '#FAF5ED', bd: '#EADBC4' },
+      { label: 'Khẩn cấp', color: '#9E5564', bg: '#F8EEF0', bd: '#E8C8CE' }
     ];
     const m = map[Math.min(3, level)];
     return { label: m.label, color: m.color, bg: m.bg, bd: m.bd, reason: reasons.length ? reasons.slice(0, 3).join(' · ') : 'theo mức độ bệnh & triệu chứng mô tả' };
@@ -1936,10 +1936,10 @@ class Component extends DCLogic {
       'Cập nhật chuyên gia ngay nếu diễn biến xấu đi'
     ];
     return [
-      { key: 'sick', label: 'Đàn đang bệnh', tone: '#C0392B', bg: '#FCEEEC', bd: '#F2C9C4', items: sick },
-      { key: 'healthy', label: 'Đàn khỏe cùng trại', tone: '#0070B0', bg: '#E8F2F8', bd: '#D2E5F1', items: healthy },
-      { key: 'bio', label: 'Người · xe · dụng cụ', tone: '#5E8E28', bg: '#F1F7E8', bd: '#D6E7BD', items: bio },
-      { key: 'follow', label: 'Theo dõi tiếp', tone: '#6A52B3', bg: '#F0EEF8', bd: '#DAD2EE', items: follow }
+      { key: 'sick', label: 'Đàn đang bệnh', tone: '#9E5564', bg: '#F8EEF0', bd: '#E8C8CE', items: sick },
+      { key: 'healthy', label: 'Đàn khỏe cùng trại', tone: '#36677D', bg: '#E7F2F5', bd: '#94BFCE', items: healthy },
+      { key: 'bio', label: 'Người · xe · dụng cụ', tone: '#4C825C', bg: '#EDF5F0', bd: '#CADDCF', items: bio },
+      { key: 'follow', label: 'Theo dõi tiếp', tone: '#6E5A9D', bg: '#F5F3F9', bd: '#DFD9EC', items: follow }
     ];
   }
 
@@ -1962,10 +1962,10 @@ class Component extends DCLogic {
   groupProductsByRole(d){
     const virus = !d.co_thuoc_dac_tri;
     const defs = [
-      { key: 'sat_trung', label: 'Sát trùng – an toàn sinh học', tone: '#5E8E28', bg: '#F1F7E8', bd: '#D6E7BD' },
-      { key: 'ho_tro', label: 'Hỗ trợ – nâng sức đề kháng', tone: '#0070B0', bg: '#E8F2F8', bd: '#D2E5F1' },
-      { key: 'phong', label: virus ? 'Vaccine cho đàn khỏe (đúng đối tượng)' : 'Vaccine phòng bệnh', tone: '#6A52B3', bg: '#F0EEF8', bd: '#DAD2EE' },
-      { key: 'dieu_tri', label: virus ? 'Điều trị kế phát (chỉ khi có chỉ định)' : 'Điều trị đặc hiệu', tone: '#C0392B', bg: '#FCEEEC', bd: '#F2C9C4' }
+      { key: 'sat_trung', label: 'Sát trùng – an toàn sinh học', tone: '#4C825C', bg: '#EDF5F0', bd: '#CADDCF' },
+      { key: 'ho_tro', label: 'Hỗ trợ – nâng sức đề kháng', tone: '#36677D', bg: '#E7F2F5', bd: '#94BFCE' },
+      { key: 'phong', label: virus ? 'Vaccine cho đàn khỏe (đúng đối tượng)' : 'Vaccine phòng bệnh', tone: '#6E5A9D', bg: '#F5F3F9', bd: '#DFD9EC' },
+      { key: 'dieu_tri', label: virus ? 'Điều trị kế phát (chỉ khi có chỉ định)' : 'Điều trị đặc hiệu', tone: '#9E5564', bg: '#F8EEF0', bd: '#E8C8CE' }
     ];
     const byRole = {};
     (d.san_pham_lien_quan || []).forEach(ma => { const p = this.DB.prodMap[ma]; if (!p) return; const r = this.roleOf(p.loai); (byRole[r] = byRole[r] || []).push(this.productCard(ma)); });
@@ -1975,11 +1975,11 @@ class Component extends DCLogic {
   diagnosisQuickActions(d, caseObj, needEsc){
     const seed = { d, caseObj };
     const qa = [
-      { label: 'Tính số lượng sản phẩm', tone: '#0070B0', bg: '#E8F2F8', bd: '#D2E5F1', fn: () => this.openQty(seed) },
-      { label: 'Tạo đơn nháp', tone: '#5E8E28', bg: '#F1F7E8', bd: '#D6E7BD', fn: () => this.actCreateOrder(seed) }
+      { label: 'Tính số lượng sản phẩm', tone: '#36677D', bg: '#E7F2F5', bd: '#94BFCE', fn: () => this.openQty(seed) },
+      { label: 'Tạo đơn nháp', tone: '#4C825C', bg: '#EDF5F0', bd: '#CADDCF', fn: () => this.actCreateOrder(seed) }
     ];
-    if (needEsc) qa.push({ label: 'Tạo ticket chuyên gia', tone: '#C0392B', bg: '#FCEEEC', bd: '#F2C9C4', fn: () => this.actCreateTicket(seed) });
-    qa.push({ label: 'Soạn tin nhắn gửi khách', tone: '#6A52B3', bg: '#F0EEF8', bd: '#DAD2EE', fn: () => this.actCustomerMsg(seed) });
+    if (needEsc) qa.push({ label: 'Tạo ticket chuyên gia', tone: '#9E5564', bg: '#F8EEF0', bd: '#E8C8CE', fn: () => this.actCreateTicket(seed) });
+    qa.push({ label: 'Soạn tin nhắn gửi khách', tone: '#6E5A9D', bg: '#F5F3F9', bd: '#DFD9EC', fn: () => this.actCustomerMsg(seed) });
     return qa;
   }
 
@@ -2014,7 +2014,7 @@ class Component extends DCLogic {
       else if (role === 'ho_tro'){ tone = 'Bán kèm'; priority = 1; }
       else if (role === 'phong'){ tone = virus ? 'Có điều kiện' : 'Ưu tiên'; priority = virus ? 2 : 0; }
       else { tone = virus ? 'Cần chuyên gia' : 'Ưu tiên'; priority = virus ? 3 : 0; }
-      const toneColor = ({ 'Ưu tiên': '#5E8E28', 'Bán kèm': '#0070B0', 'Có điều kiện': '#E0A02A', 'Cần chuyên gia': '#C0392B' })[tone];
+      const toneColor = ({ 'Ưu tiên': '#4C825C', 'Bán kèm': '#36677D', 'Có điều kiện': '#B4853A', 'Cần chuyên gia': '#9E5564' })[tone];
       return { ma: p.ma_sp, ten: p.ten, role: this.loaiLabel(p.loai), tone, toneColor, priority, qty: this.estimateQtyLine(p, herd) };
     }).filter(Boolean).sort((a, b) => a.priority - b.priority);
     return {
@@ -2058,9 +2058,9 @@ class Component extends DCLogic {
     return {
       code: this.uid('CG-'),
       sla: urgent ? 'Phản hồi trong 2 giờ' : 'Phản hồi trong 24 giờ',
-      slaColor: urgent ? '#C0392B' : '#E0A02A',
+      slaColor: urgent ? '#9E5564' : '#B4853A',
       expert: d.vat_nuoi === 'gà' ? 'BSTY. Trần Gia Cầm — R&D Gia cầm' : 'BSTY. Lê Minh Heo — R&D Heo',
-      status: 'Đang chờ chuyên gia', statusColor: '#E0A02A',
+      status: 'Đang chờ chuyên gia', statusColor: '#B4853A',
       created: this.todayStr(),
       rows: [
         { k: 'Khách / trại', v: c ? (c.customer || '—') : '—' },
@@ -2155,7 +2155,7 @@ class Component extends DCLogic {
     }
     if (p.gia_vnd && p.loai === 'vaccine') rows.push({ k: 'Chi phí ước tính', v: this.fmtVnd(needVal * p.gia_vnd) });
     const text = rows.map(r => r.k + ': ' + r.v).join('\n');
-    const display = rows.map(r => ({ k: r.k, v: r.v, tone: r.hi ? '#0070B0' : '#2C3A43', wt: r.hi ? '700' : '500' }));
+    const display = rows.map(r => ({ k: r.k, v: r.v, tone: r.hi ? '#36677D' : '#2C3A43', wt: r.hi ? '700' : '500' }));
     return { rows: display, warn: 'Số liệu mang tính ước tính demo — cần đối chiếu nhãn thật và chỉ định thú y trước khi chốt đơn.', copy: () => this.copyText(text) };
   }
 
@@ -2256,9 +2256,9 @@ class Component extends DCLogic {
     return {
       regionAlert,
       tiers: [
-        { key: 'safe', label: 'Đơn an toàn', sub: 'Giữ nhịp – không rủi ro tồn', tone: '#5E8E28', bg: '#F1F7E8', bd: '#D6E7BD', items: safe },
-        { key: 'reco', label: 'Đơn đề xuất', sub: 'Thêm combo phòng / hỗ trợ', tone: '#0070B0', bg: '#E8F2F8', bd: '#D2E5F1', items: recommended },
-        { key: 'growth', label: 'Đơn tăng trưởng', sub: 'Mở SKU mới theo nhu cầu vùng', tone: '#6A52B3', bg: '#F0EEF8', bd: '#DAD2EE', items: growth }
+        { key: 'safe', label: 'Đơn an toàn', sub: 'Giữ nhịp – không rủi ro tồn', tone: '#4C825C', bg: '#EDF5F0', bd: '#CADDCF', items: safe },
+        { key: 'reco', label: 'Đơn đề xuất', sub: 'Thêm combo phòng / hỗ trợ', tone: '#36677D', bg: '#E7F2F5', bd: '#94BFCE', items: recommended },
+        { key: 'growth', label: 'Đơn tăng trưởng', sub: 'Mở SKU mới theo nhu cầu vùng', tone: '#6E5A9D', bg: '#F5F3F9', bd: '#DFD9EC', items: growth }
       ],
       script: [
         { k: 'Mở đầu', v: 'Chào anh/chị, em bên Nova Consumer. Em xem lại lịch sử lấy hàng của mình, có vài điểm muốn trao đổi nhanh ạ.' },
@@ -2325,11 +2325,11 @@ class Component extends DCLogic {
   setRole(r){ this.setState({ role: r, userOn: false }); }
   dashboard(){
     return [
-      { k: 'Ca đang mở', v: (this.state.cases || []).length, color: '#0070B0' },
-      { k: 'Đơn nháp', v: (this.state.draftOrders || []).length, color: '#5E8E28' },
-      { k: 'Ticket chuyên gia', v: (this.state.expertTickets || []).length, color: '#C0392B' },
-      { k: 'Chiến dịch', v: (this.state.campaigns || []).length, color: '#6A52B3' },
-      { k: 'Cảnh báo nặng', v: this.openAlertHottest(), color: '#E0A02A' }
+      { k: 'Ca đang mở', v: (this.state.cases || []).length, color: '#36677D' },
+      { k: 'Đơn nháp', v: (this.state.draftOrders || []).length, color: '#4C825C' },
+      { k: 'Ticket chuyên gia', v: (this.state.expertTickets || []).length, color: '#9E5564' },
+      { k: 'Chiến dịch', v: (this.state.campaigns || []).length, color: '#6E5A9D' },
+      { k: 'Cảnh báo nặng', v: this.openAlertHottest(), color: '#B4853A' }
     ];
   }
 
