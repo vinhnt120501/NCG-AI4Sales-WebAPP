@@ -56,12 +56,11 @@
     </div>
     <button onClick="{{ toggleCap }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:16px 16px 7px 16px;background:transparent;border:none;cursor:pointer;transition:opacity .15s" style-hover="opacity:.7" style-active="opacity:.45">
       <span style="font-size:11.5px;font-weight:700;letter-spacing:.2px;color:#8B99A2">Năng lực trợ lý</span>
-      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#9AA8B1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="{{ capChevStyle }}"><polyline points="9 6 15 12 9 18"></polyline></svg>
     </button>
     <sc-if value="{{ secCap }}" hint-placeholder-val="{{ true }}">
     <div style="padding:0 16px;display:flex;flex-direction:column;gap:4px;animation:sm-up .22s ease">
 
-      <button onClick="{{ runDiagnose }}" style="display:flex;gap:11px;align-items:center;text-align:left;padding:10px;border:1px solid transparent;background:transparent;border-radius:11px;cursor:pointer;width:100%;transition:background .15s,transform .12s" style-hover="background:#F0F6FA" style-active="background:#E7F0F6;transform:scale(.99)">
+      <button onClick="{{ runDiagnose }}" style="display:flex;gap:11px;align-items:center;text-align:left;padding:10px;border:1px solid transparent;background:transparent;border-radius:11px;cursor:pointer;width:100%;transition:background .15s,transform .12s" style-hover="background:#EAF1F8 !important" style-active="background:#D8E6F2 !important;transform:scale(.99)">
         <span style="width:34px;height:34px;flex:none;border-radius:9px;background:#F8EEF0;display:flex;align-items:center;justify-content:center">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#9E5564" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
         </span>
@@ -71,7 +70,7 @@
         </span>
       </button>
 
-      <button onClick="{{ runDrug }}" style="display:flex;gap:11px;align-items:center;text-align:left;padding:10px;border:1px solid transparent;background:transparent;border-radius:11px;cursor:pointer;width:100%;transition:background .15s,transform .12s" style-hover="background:#F0F6FA" style-active="background:#E7F0F6;transform:scale(.99)">
+      <button onClick="{{ runDrug }}" style="display:flex;gap:11px;align-items:center;text-align:left;padding:10px;border:1px solid transparent;background:transparent;border-radius:11px;cursor:pointer;width:100%;transition:background .15s,transform .12s" style-hover="background:#EAF1F8 !important" style-active="background:#D8E6F2 !important;transform:scale(.99)">
         <span style="width:34px;height:34px;flex:none;border-radius:9px;background:#E7F2F5;display:flex;align-items:center;justify-content:center">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#36677D" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"></circle><line x1="15.5" y1="15.5" x2="20" y2="20"></line></svg>
         </span>
@@ -81,7 +80,7 @@
         </span>
       </button>
 
-      <button onClick="{{ runDistributor }}" style="display:flex;gap:11px;align-items:center;text-align:left;padding:10px;border:1px solid transparent;background:transparent;border-radius:11px;cursor:pointer;width:100%;transition:background .15s,transform .12s" style-hover="background:#F0F6FA" style-active="background:#E7F0F6;transform:scale(.99)">
+      <button onClick="{{ runDistributor }}" style="display:flex;gap:11px;align-items:center;text-align:left;padding:10px;border:1px solid transparent;background:transparent;border-radius:11px;cursor:pointer;width:100%;transition:background .15s,transform .12s" style-hover="background:#EAF1F8 !important" style-active="background:#D8E6F2 !important;transform:scale(.99)">
         <span style="width:34px;height:34px;flex:none;border-radius:9px;background:#EDF5F0;display:flex;align-items:center;justify-content:center">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#4C825C" stroke-width="2" stroke-linecap="round"><line x1="6" y1="20" x2="6" y2="13"></line><line x1="12" y1="20" x2="12" y2="7"></line><line x1="18" y1="20" x2="18" y2="10"></line></svg>
         </span>
@@ -91,13 +90,13 @@
         </span>
       </button>
 
-      <button onClick="{{ runRag }}" style="display:flex;gap:11px;align-items:center;text-align:left;padding:10px;border:1px solid transparent;background:transparent;border-radius:11px;cursor:pointer;width:100%;transition:background .15s,transform .12s" style-hover="background:#F0F6FA" style-active="background:#E7F0F6;transform:scale(.99)">
+      <button onClick="{{ runRag }}" style="display:flex;gap:11px;align-items:center;text-align:left;padding:10px;border:1px solid transparent;background:transparent;border-radius:11px;cursor:pointer;width:100%;transition:background .15s,transform .12s" style-hover="background:#EAF1F8 !important" style-active="background:#D8E6F2 !important;transform:scale(.99)">
         <span style="width:34px;height:34px;flex:none;border-radius:9px;background:#F5F3F9;display:flex;align-items:center;justify-content:center">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#6E5A9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="2"></rect><line x1="9" y1="8" x2="15" y2="8"></line><line x1="9" y1="12" x2="15" y2="12"></line><line x1="9" y1="16" x2="13" y2="16"></line></svg>
         </span>
         <span style="min-width:0">
           <span style="display:block;font-size:13px;font-weight:600;color:#23323B">Tra cứu tài liệu</span>
-          <span style="display:block;font-size:11px;color:#90A0A9">Chính sách, khuyến mãi (RAG)</span>
+          <span style="display:block;font-size:11px;color:#90A0A9">Chính sách, khuyến mãi</span>
         </span>
       </button>
     </div>
@@ -106,12 +105,11 @@
     <sc-if value="{{ hasCases }}" hint-placeholder-val="{{ true }}">
     <button onClick="{{ toggleCase }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:16px 16px 7px 16px;background:transparent;border:none;cursor:pointer;transition:opacity .15s" style-hover="opacity:.7" style-active="opacity:.45">
       <span style="font-size:11.5px;font-weight:700;letter-spacing:.2px;color:#8B99A2">Ca bệnh gần đây</span>
-      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#9AA8B1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="{{ caseChevStyle }}"><polyline points="9 6 15 12 9 18"></polyline></svg>
     </button>
     <sc-if value="{{ secCase }}" hint-placeholder-val="{{ true }}">
     <div style="padding:0 16px;display:flex;flex-direction:column;gap:5px;animation:sm-up .22s ease">
       <sc-for list="{{ recentCases }}" as="c" hint-placeholder-count="3">
-        <button onClick="{{ c.open }}" style="display:block;text-align:left;width:100%;padding:8px 10px;border:1px solid #EEF2F5;border-radius:9px;background:#fff;cursor:pointer;transition:background .15s,border-color .15s,transform .12s" style-hover="background:#F4F8FA;border-color:#94BFCE" style-active="background:#EEF4F8;transform:scale(.99)">
+        <button onClick="{{ c.open }}" style="display:block;text-align:left;width:100%;padding:8px 10px;border:1px solid transparent;border-radius:9px;background:transparent;cursor:pointer;transition:background .15s,transform .12s" style-hover="background:#EAF1F8 !important" style-active="background:#D8E6F2 !important;transform:scale(.99)">
           <div style="display:flex;justify-content:space-between;gap:8px;align-items:center">
             <span style="font-size:12.5px;font-weight:600;color:#23323B;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ c.title }}</span>
             <span style="flex:none;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#9AA8B1">{{ c.id }}</span>
@@ -125,12 +123,11 @@
 
     <button onClick="{{ toggleHist }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:16px 16px 7px 16px;background:transparent;border:none;cursor:pointer;transition:opacity .15s" style-hover="opacity:.7" style-active="opacity:.45">
       <span style="font-size:11.5px;font-weight:700;letter-spacing:.2px;color:#8B99A2">Hội thoại gần đây</span>
-      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#9AA8B1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="{{ histChevStyle }}"><polyline points="9 6 15 12 9 18"></polyline></svg>
     </button>
     <sc-if value="{{ secHist }}" hint-placeholder-val="{{ true }}">
     <div style="padding:0 16px 12px 16px;display:flex;flex-direction:column;gap:3px;overflow:auto;flex:1;animation:sm-up .22s ease">
       <sc-for list="{{ recentChats }}" as="h" hint-placeholder-count="4">
-        <button onClick="{{ h.open }}" style="display:flex;align-items:center;gap:9px;text-align:left;width:100%;padding:8px 10px;border:1px solid transparent;border-radius:8px;background:transparent;font-family:'Be Vietnam Pro';font-size:12.5px;color:#5E6E78;cursor:pointer;transition:background .15s,transform .12s" style-hover="background:#F4F8FA" style-active="background:#EDF3F7;transform:scale(.99)">
+        <button onClick="{{ h.open }}" style="display:flex;align-items:center;gap:9px;text-align:left;width:100%;padding:8px 10px;border:1px solid transparent;border-radius:8px;background:transparent;font-family:'Be Vietnam Pro';font-size:12.5px;color:#5E6E78;cursor:pointer;transition:background .15s,transform .12s" style-hover="background:#EAF1F8 !important" style-active="background:#D8E6F2 !important;transform:scale(.99)">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#A4B1BA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
           <span style="flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ h.label }}</span>
         </button>
@@ -199,7 +196,7 @@
                 </div>
               </div>
               <div style="padding:13px 16px 6px">
-                <div style="font-size:10px;font-weight:700;letter-spacing:.6px;color:#A0AEB6;text-transform:uppercase;margin-bottom:8px">Vai trò (mô phỏng)</div>
+                <div style="font-size:10px;font-weight:700;letter-spacing:.6px;color:#A0AEB6;margin-bottom:8px">Vai trò (mô phỏng)</div>
                 <div style="display:flex;gap:5px;background:#F4F8FA;border:1px solid #E1E8ED;border-radius:10px;padding:3px">
                   <button onClick="{{ setRoleSales }}" style="{{ roleSalesStyle }}">Sales</button>
                   <button onClick="{{ setRoleManager }}" style="{{ roleManagerStyle }}">Quản lý</button>
@@ -207,7 +204,7 @@
                 </div>
               </div>
               <div style="padding:13px 16px 6px">
-                <div style="font-size:10px;font-weight:700;letter-spacing:.6px;color:#A0AEB6;text-transform:uppercase;margin-bottom:8px">Bảng theo dõi</div>
+                <div style="font-size:10px;font-weight:700;letter-spacing:.6px;color:#A0AEB6;margin-bottom:8px">Bảng theo dõi</div>
                 <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px">
                   <sc-for list="{{ dashboard }}" as="kpi" hint-placeholder-count="5">
                     <div style="display:flex;align-items:center;gap:9px;background:#F7FAFC;border:1px solid #EEF2F5;border-radius:10px;padding:8px 10px">
@@ -234,7 +231,7 @@
         <!-- Welcome -->
         <sc-if value="{{ showWelcome }}" hint-placeholder-val="{{ true }}">
           <div style="min-height:calc(100vh - 170px);display:flex;flex-direction:column;align-items:center;justify-content:center;animation:sm-up .4s ease">
-            <div style="font-size:26px;font-weight:800;color:#16242E;letter-spacing:-.4px;text-align:center">Chào Sơn, cần hỗ trợ gì hôm nay?</div>
+            <div style="font-size:26px;font-weight:800;color:#16242E;letter-spacing:-.4px;text-align:center">Chào anh Sơn, cần hỗ trợ gì hôm nay?</div>
             <div style="font-size:14px;color:#7E8C95;margin-top:9px;max-width:480px;line-height:1.55;text-align:center">Mô tả ca bệnh, hỏi sản phẩm, tên nhà phân phối — hoặc chọn một năng lực ở thanh bên trái.</div>
             <div class="sm-inputbox" style="width:100%;max-width:680px;margin-top:26px;display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #DDE5EA;border-radius:14px;padding:7px 7px 7px 16px;box-shadow:0 2px 12px rgba(22,36,46,.06)">
               <input value="{{ inputVal }}" onChange="{{ onInput }}" onKeyDown="{{ onKey }}" placeholder="Mô tả triệu chứng, hỏi sản phẩm, hoặc tên nhà phân phối…" style="flex:1;border:none;outline:none;font-family:'Be Vietnam Pro';font-size:14px;color:#16242E;background:transparent;padding:8px 0">
@@ -339,7 +336,7 @@
                       <div style="padding:15px 17px;border-bottom:1px solid #EEF2F5">
                         <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
                           <div>
-                            <div style="font-size:10.5px;font-weight:700;letter-spacing:.8px;color:#A0AEB6;text-transform:uppercase">Bệnh khả năng cao nhất</div>
+                            <div style="font-size:10.5px;font-weight:700;letter-spacing:.8px;color:#A0AEB6">Bệnh khả năng cao nhất</div>
                             <div style="font-size:18px;font-weight:800;color:#16242E;letter-spacing:-.3px;margin-top:2px">{{ m.diagnosis.benh }}</div>
                           </div>
                           <span style="flex:none;font-size:11px;font-weight:700;color:#fff;padding:5px 11px;border-radius:20px;background: {{ m.diagnosis.mucColor }}">{{ m.diagnosis.mucDo }}</span>
@@ -356,11 +353,11 @@
                       </div>
                       <div style="display:flex;padding:13px 17px;gap:18px;flex-wrap:wrap">
                         <div style="min-width:140px">
-                          <div style="font-size:10.5px;font-weight:700;letter-spacing:.6px;color:#A0AEB6;text-transform:uppercase">Tác nhân</div>
+                          <div style="font-size:10.5px;font-weight:700;letter-spacing:.6px;color:#A0AEB6">Tác nhân</div>
                           <div style="font-size:13px;color:#2C3A43;margin-top:3px">{{ m.diagnosis.tacNhan }}</div>
                         </div>
                         <div style="flex:1;min-width:180px">
-                          <div style="font-size:10.5px;font-weight:700;letter-spacing:.6px;color:#A0AEB6;text-transform:uppercase">Chẩn đoán phân biệt</div>
+                          <div style="font-size:10.5px;font-weight:700;letter-spacing:.6px;color:#A0AEB6">Chẩn đoán phân biệt</div>
                           <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:6px">
                             <sc-for list="{{ m.diagnosis.phanBiet }}" as="d" hint-placeholder-count="3">
                               <span style="font-size:12px;color:#5E6E78;background:#F4F7F9;border:1px solid #E4EBEF;padding:3px 10px;border-radius:7px">{{ d }}</span>
@@ -376,7 +373,7 @@
                     <div style="margin-top:12px;display:flex;align-items:center;gap:13px;background: {{ m.riskBadge.bg }};border:1px solid {{ m.riskBadge.bd }};border-radius:12px;padding:12px 15px">
                       <span style="flex:none;font-size:11px;font-weight:800;letter-spacing:.3px;color:#fff;padding:6px 13px;border-radius:20px;background: {{ m.riskBadge.color }}">{{ m.riskBadge.label }}</span>
                       <div style="min-width:0">
-                        <div style="font-size:10.5px;font-weight:700;letter-spacing:.5px;color:#9AA8B1;text-transform:uppercase">Mức rủi ro ca bệnh</div>
+                        <div style="font-size:10.5px;font-weight:700;letter-spacing:.5px;color:#9AA8B1">Mức rủi ro ca bệnh</div>
                         <div style="font-size:12.5px;color:#41525B;margin-top:2px;line-height:1.45">{{ m.riskBadge.reason }}</div>
                       </div>
                     </div>
@@ -385,7 +382,7 @@
                   <!-- EARLY WARNING (cảnh báo sớm / dự đoán) -->
                   <sc-if value="{{ m.earlyWarning }}" hint-placeholder-val="{{ true }}">
                     <div style="margin-top:12px;background:#FAF5ED;border:1px solid #EADBC4;border-left:4px solid #C69D5D;border-radius:10px;padding:13px 15px">
-                      <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#8A6635;text-transform:uppercase;margin-bottom:5px">⚡ Chỉ số cảnh báo sớm</div>
+                      <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#8A6635;margin-bottom:5px">⚡ Chỉ số cảnh báo sớm</div>
                       <div style="font-size:12.5px;line-height:1.55;color:#9A723C">{{ m.earlyWarning }}</div>
                     </div>
                   </sc-if>
@@ -472,9 +469,9 @@
                     <div style="margin-top:12px;background:#fff;border:1px solid #E4EBEF;border-radius:14px;overflow:hidden">
                       <div style="padding:13px 17px;border-bottom:1px solid #EEF2F5;font-size:13px;font-weight:700;color:#23323B">Ảnh hưởng &amp; lưu ý từng bước</div>
                       <div style="display:flex;gap:14px;padding:9px 17px 8px;border-bottom:1px solid #F2F5F7">
-                        <span style="width:165px;flex:none;font-size:10px;font-weight:700;letter-spacing:.5px;color:#A0AEB6;text-transform:uppercase">Bước</span>
-                        <span style="flex:1;font-size:10px;font-weight:700;letter-spacing:.5px;color:#A0AEB6;text-transform:uppercase">Tác dụng</span>
-                        <span style="flex:1;font-size:10px;font-weight:700;letter-spacing:.5px;color:#A0AEB6;text-transform:uppercase">Lưu ý</span>
+                        <span style="width:165px;flex:none;font-size:10px;font-weight:700;letter-spacing:.5px;color:#A0AEB6">Bước</span>
+                        <span style="flex:1;font-size:10px;font-weight:700;letter-spacing:.5px;color:#A0AEB6">Tác dụng</span>
+                        <span style="flex:1;font-size:10px;font-weight:700;letter-spacing:.5px;color:#A0AEB6">Lưu ý</span>
                       </div>
                       <sc-for list="{{ m.impactTable }}" as="r" hint-placeholder-count="4">
                         <div style="display:flex;gap:14px;padding:10px 17px;border-bottom:1px solid #F2F5F7">
@@ -621,7 +618,7 @@
 
                       <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#EEF2F5;border-top:1px solid #EEF2F5">
                         <div style="background:#fff;padding:15px 17px">
-                          <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#36677D;text-transform:uppercase;margin-bottom:9px">↻ Gợi ý đơn kế tiếp</div>
+                          <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#36677D;margin-bottom:9px">↻ Gợi ý đơn kế tiếp</div>
                           <div style="display:flex;flex-direction:column;gap:9px">
                             <sc-for list="{{ m.distributor.goiYDon }}" as="g" hint-placeholder-count="2">
                               <div>
@@ -632,7 +629,7 @@
                           </div>
                         </div>
                         <div style="background:#fff;padding:15px 17px">
-                          <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#4C825C;text-transform:uppercase;margin-bottom:9px">↗ Cơ hội bán thêm</div>
+                          <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#4C825C;margin-bottom:9px">↗ Cơ hội bán thêm</div>
                           <div style="display:flex;flex-direction:column;gap:9px">
                             <sc-for list="{{ m.distributor.crossSell }}" as="x" hint-placeholder-count="2">
                               <div>
@@ -782,7 +779,7 @@
                   <!-- MARKET -->
                   <sc-if value="{{ m.marketInfo }}" hint-placeholder-val="{{ true }}">
                     <div style="margin-top:12px;background:#F7FAFC;border:1px dashed #CBDCE6;border-radius:12px;padding:13px 15px">
-                      <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#36677D;text-transform:uppercase;margin-bottom:5px">Thông tin thị trường</div>
+                      <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#36677D;margin-bottom:5px">Thông tin thị trường</div>
                       <div style="font-size:12.5px;line-height:1.55;color:#41525B">{{ m.marketInfo }}</div>
                     </div>
                   </sc-if>
@@ -852,7 +849,7 @@
           <div style="position:absolute;inset:0;z-index:1;display:flex;align-items:center;justify-content:center;pointer-events:none"><div style="font-size:12.5px;color:#8B99A2">Đang tải bản đồ… (cần kết nối Internet)</div></div>
           <div ref="{{ mapRef }}" style="position:absolute;inset:0"></div>
           <div style="position:absolute;left:14px;bottom:18px;z-index:800;background:rgba(255,255,255,.94);border:1px solid #E1E8ED;border-radius:10px;padding:9px 12px;box-shadow:0 2px 10px rgba(22,36,46,.1)">
-            <div style="font-size:10.5px;font-weight:700;color:#5E6E78;margin-bottom:6px;letter-spacing:.3px">MẬT ĐỘ CẢNH BÁO</div>
+            <div style="font-size:10.5px;font-weight:700;color:#5E6E78;margin-bottom:6px;letter-spacing:.3px">Mật độ cảnh báo</div>
             <div style="display:flex;align-items:center;gap:8px">
               <span style="font-size:10.5px;color:#8B99A2">Thấp</span>
               <span style="width:120px;height:9px;border-radius:5px;background:linear-gradient(90deg,#2c7bb6,#abd9e9,#ffffbf,#fdae61,#d7191c)"></span>
@@ -1042,7 +1039,7 @@
         </div>
         <sc-if value="{{ qtyResult }}" hint-placeholder-val="{{ true }}">
           <div style="background:#F7FAFC;border:1px solid #E4EBEF;border-radius:12px;overflow:hidden">
-            <div style="padding:11px 15px;border-bottom:1px solid #EEF2F5;font-size:11px;font-weight:700;letter-spacing:.5px;color:#36677D;text-transform:uppercase">Ước tính demo</div>
+            <div style="padding:11px 15px;border-bottom:1px solid #EEF2F5;font-size:11px;font-weight:700;letter-spacing:.5px;color:#36677D">Ước tính demo</div>
             <div style="padding:4px 15px 10px">
               <sc-for list="{{ qtyResult.rows }}" as="r" hint-placeholder-count="5">
                 <div style="display:flex;justify-content:space-between;gap:14px;padding:7px 0;border-bottom:1px solid #F2F5F7">
@@ -1083,7 +1080,7 @@
           <span style="font-size:12.5px;color:#41525B;line-height:1.45">Khu vực <b>{{ campaignView.tinh }}</b> đang có áp lực <b>{{ campaignView.benh }}</b> — chủ động chào hàng phòng dịch.</span>
         </div>
         <div>
-          <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#A0AEB6;text-transform:uppercase;margin-bottom:9px">NPP / khách ưu tiên gọi</div>
+          <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#A0AEB6;margin-bottom:9px">NPP / khách ưu tiên gọi</div>
           <div style="display:flex;flex-direction:column;gap:7px">
             <sc-for list="{{ campaignView.targets }}" as="t" hint-placeholder-count="3">
               <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid #EEF2F5;border-radius:10px;padding:9px 12px">
@@ -1097,7 +1094,7 @@
           </div>
         </div>
         <div>
-          <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#A0AEB6;text-transform:uppercase;margin-bottom:9px">Sản phẩm nên chào</div>
+          <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#A0AEB6;margin-bottom:9px">Sản phẩm nên chào</div>
           <div style="display:flex;flex-wrap:wrap;gap:7px">
             <sc-for list="{{ campaignView.skus }}" as="p" hint-placeholder-count="3">
               <span style="display:inline-flex;align-items:center;gap:7px;font-size:12px;color:#3A4A53;background:#fff;border:1px solid #E4EBEF;padding:6px 11px;border-radius:9px"><span style="width:6px;height:6px;border-radius:50%;background:#36677D"></span>{{ p.ten }} <span style="font-size:10px;color:#9AA8B1">{{ p.loai }}</span></span>
@@ -1105,7 +1102,7 @@
           </div>
         </div>
         <div>
-          <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#A0AEB6;text-transform:uppercase;margin-bottom:9px">Tin nhắn mẫu</div>
+          <div style="font-size:11px;font-weight:700;letter-spacing:.5px;color:#A0AEB6;margin-bottom:9px">Tin nhắn mẫu</div>
           <div style="background:#F0F6FA;border:1px solid #94BFCE;border-radius:10px 10px 10px 2px;padding:13px 15px;font-size:13px;line-height:1.6;color:#2C3A43">{{ campaignView.msg }}</div>
         </div>
       </div>
@@ -1260,8 +1257,6 @@ class Component extends DCLogic {
     clearTimeout(this._navT);
     this._navT = setTimeout(() => { if (this._map) this._map.invalidateSize(); }, 300);
   }
-
-  chevStyle(open){ return "transition:transform .15s ease;transform:rotate(" + (open ? "90deg" : "0deg") + ")"; }
 
   alertWeight(m){ return ({ nhe: 0.4, trung_binh: 0.7, nang: 1.0 })[m] || 0.6; }
 
@@ -1792,7 +1787,7 @@ class Component extends DCLogic {
       diagnose: { label: 'Đang đối chiếu triệu chứng với KB bệnh', pills: ['chan_doan_benh', 'tra_cuu_tai_lieu'] },
       drug: { label: 'Đang tra cứu catalogue thuốc / vaccine', pills: ['tra_cuu_thuoc'] },
       distributor: { label: 'Đang phân tích lịch sử đơn nhà phân phối', pills: ['phan_tich_nha_phan_phoi'] },
-      rag: { label: 'Đang truy xuất tài liệu (RAG)', pills: ['tra_cuu_tai_lieu'] }
+      rag: { label: 'Đang truy xuất tài liệu', pills: ['tra_cuu_tai_lieu'] }
     })[tool] || { label: 'Đang xử lý yêu cầu', pills: ['tra_cuu_tai_lieu'] };
   }
 
@@ -2360,9 +2355,6 @@ class Component extends DCLogic {
       toggleCap: () => this.setState(s => ({ secCap: !s.secCap })),
       toggleCase: () => this.setState(s => ({ secCase: !s.secCase })),
       toggleHist: () => this.setState(s => ({ secHist: !s.secHist })),
-      capChevStyle: this.chevStyle(this.state.secCap),
-      caseChevStyle: this.chevStyle(this.state.secCase),
-      histChevStyle: this.chevStyle(this.state.secHist),
       recentChats: this.recentChats(),
       headerTitle: this.state.tab === 'market' ? 'Thông tin thị trường & dịch bệnh' : 'Trợ lý tư vấn & bán hàng',
       headerSub: this.state.tab === 'market' ? 'Bản đồ nhiệt cảnh báo dịch theo địa bàn' : 'Chuẩn hóa tư vấn thú y · khai thác nhà phân phối',
