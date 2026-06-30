@@ -40,7 +40,7 @@
   <aside style="{{ asideStyle }}">
     <div style="height:60px;flex:none;display:flex;align-items:center;padding:0 16px;border-bottom:1px solid #E1E8ED">
       <div onClick="{{ goHome }}" title="Về trang chủ" style="display:flex;align-items:center;gap:10px;cursor:pointer;height:38px">
-        <img src="assets/anova-logo.png" alt="Anova Feed" style="height:26px;width:auto;display:block;flex:none">
+        <img src="assets/saigonvet-logo.png" alt="SAIGONVET" style="height:30px;width:auto;display:block;flex:none">
         <span style="width:1px;height:24px;background:#E1E8ED;display:block;flex:none"></span>
         <div style="display:flex;flex-direction:column;justify-content:center;line-height:1.1">
           <div style="font-size:15px;font-weight:800;letter-spacing:-.2px;color:#36677D">SalesMate</div>
@@ -60,45 +60,26 @@
     <sc-if value="{{ secCap }}" hint-placeholder-val="{{ true }}">
     <div style="padding:0 16px;display:flex;flex-direction:column;gap:4px;animation:sm-up .22s ease">
 
-      <button onClick="{{ runDiagnose }}" style="display:flex;gap:11px;align-items:center;text-align:left;padding:10px;border:1px solid transparent;background:transparent;border-radius:11px;cursor:pointer;width:100%;transition:background .15s,transform .12s" style-hover="background:#EAF1F8 !important" style-active="background:#D8E6F2 !important;transform:scale(.99)">
-        <span style="width:34px;height:34px;flex:none;border-radius:9px;background:#F8EEF0;display:flex;align-items:center;justify-content:center">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#9E5564" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
-        </span>
-        <span style="min-width:0">
-          <span style="display:block;font-size:13px;font-weight:600;color:#23323B">Chẩn đoán bệnh</span>
-          <span style="display:block;font-size:11px;color:#90A0A9">Triệu chứng → bệnh + xử lý</span>
-        </span>
-      </button>
-
-      <button onClick="{{ runDrug }}" style="display:flex;gap:11px;align-items:center;text-align:left;padding:10px;border:1px solid transparent;background:transparent;border-radius:11px;cursor:pointer;width:100%;transition:background .15s,transform .12s" style-hover="background:#EAF1F8 !important" style-active="background:#D8E6F2 !important;transform:scale(.99)">
+      <button onClick="{{ openKnowledge }}" style="display:flex;gap:11px;align-items:center;text-align:left;padding:10px;border:1px solid transparent;background:transparent;border-radius:11px;cursor:pointer;width:100%;transition:background .15s,transform .12s" style-hover="background:#EAF1F8 !important" style-active="background:#D8E6F2 !important;transform:scale(.99)">
         <span style="width:34px;height:34px;flex:none;border-radius:9px;background:#E7F2F5;display:flex;align-items:center;justify-content:center">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#36677D" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"></circle><line x1="15.5" y1="15.5" x2="20" y2="20"></line></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#36677D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2.96-2.05-5.67-5-6.57V5a3 3 0 0 0-6 0v3.43C5.05 9.33 3 12.04 3 15a7 7 0 0 0 7 7z"></path><path d="M12 9a4.85 4.85 0 0 0 2.5.5C14.75 6.5 13.5 5.5 12 5.5S9.25 6.5 9.5 9.5A4.85 4.85 0 0 0 12 9z"></path></svg>
         </span>
         <span style="min-width:0">
-          <span style="display:block;font-size:13px;font-weight:600;color:#23323B">Tra cứu thuốc &amp; vaccine</span>
-          <span style="display:block;font-size:11px;color:#90A0A9">Liều lượng, đường dùng, giá</span>
+          <span style="display:block;font-size:13px;font-weight:600;color:#23323B">Tri thức</span>
+          <span style="display:block;font-size:11px;color:#90A0A9">Chẩn đoán, phác đồ, sản phẩm – liều – giá, khuyến mãi</span>
         </span>
       </button>
 
-      <button onClick="{{ runDistributor }}" style="display:flex;gap:11px;align-items:center;text-align:left;padding:10px;border:1px solid transparent;background:transparent;border-radius:11px;cursor:pointer;width:100%;transition:background .15s,transform .12s" style-hover="background:#EAF1F8 !important" style-active="background:#D8E6F2 !important;transform:scale(.99)">
+<button onClick="{{ openPush }}" style="display:flex;gap:11px;align-items:center;text-align:left;padding:10px;border:1px solid transparent;background:transparent;border-radius:11px;cursor:pointer;width:100%;transition:background .15s,transform .12s" style-hover="background:#EAF1F8 !important" style-active="background:#D8E6F2 !important;transform:scale(.99)">
         <span style="width:34px;height:34px;flex:none;border-radius:9px;background:#EDF5F0;display:flex;align-items:center;justify-content:center">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#4C825C" stroke-width="2" stroke-linecap="round"><line x1="6" y1="20" x2="6" y2="13"></line><line x1="12" y1="20" x2="12" y2="7"></line><line x1="18" y1="20" x2="18" y2="10"></line></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#4C825C" stroke-width="2" stroke-linecap="round"><line x1="4" y1="22" x2="4" y2="14"></line><line x1="12" y1="22" x2="12" y2="8"></line><line x1="20" y1="22" x2="20" y2="2"></line></svg>
         </span>
         <span style="min-width:0">
-          <span style="display:block;font-size:13px;font-weight:600;color:#23323B">Phân tích nhà phân phối</span>
+          <span style="display:block;font-size:13px;font-weight:600;color:#23323B">Push-sale</span>
           <span style="display:block;font-size:11px;color:#90A0A9">Đơn kế tiếp + cross-sell</span>
         </span>
       </button>
 
-      <button onClick="{{ runRag }}" style="display:flex;gap:11px;align-items:center;text-align:left;padding:10px;border:1px solid transparent;background:transparent;border-radius:11px;cursor:pointer;width:100%;transition:background .15s,transform .12s" style-hover="background:#EAF1F8 !important" style-active="background:#D8E6F2 !important;transform:scale(.99)">
-        <span style="width:34px;height:34px;flex:none;border-radius:9px;background:#F5F3F9;display:flex;align-items:center;justify-content:center">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#6E5A9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="2"></rect><line x1="9" y1="8" x2="15" y2="8"></line><line x1="9" y1="12" x2="15" y2="12"></line><line x1="9" y1="16" x2="13" y2="16"></line></svg>
-        </span>
-        <span style="min-width:0">
-          <span style="display:block;font-size:13px;font-weight:600;color:#23323B">Tra cứu tài liệu</span>
-          <span style="display:block;font-size:11px;color:#90A0A9">Chính sách, khuyến mãi</span>
-        </span>
-      </button>
     </div>
     </sc-if>
 
@@ -183,6 +164,12 @@
           <button onClick="{{ goChat }}" style="{{ tabChatStyle }}">Trợ lý tư vấn</button>
           <button onClick="{{ goMarket }}" style="{{ tabMarketStyle }}">Bản đồ dịch bệnh</button>
         </div>
+        <button onClick="{{ goMarket }}" title="Cảnh báo dịch bệnh" style="position:relative;width:40px;height:40px;border-radius:11px;border:1px solid #E1E8ED;background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.15s" style-hover="background:#F4F8FA;border-color:#94BFCE">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#244B5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+          <sc-if value="{{ severeCount }}" hint-placeholder-val="{{ true }}">
+            <span style="position:absolute;top:-5px;right:-5px;min-width:18px;height:18px;padding:0 4px;border-radius:999px;background:#9E5564;color:#fff;font-size:10px;font-weight:800;display:flex;align-items:center;justify-content:center;border:2px solid #fff">{{ severeCount }}</span>
+          </sc-if>
+        </button>
         <span style="width:1px;height:26px;background:#E1E8ED;display:block"></span>
         <div style="position:relative">
           <button onClick="{{ toggleUser }}" title="Nguyễn Văn Sơn" style="{{ userAvatarStyle }}">NS</button>
@@ -235,8 +222,8 @@
             <div style="font-size:14px;color:#7E8C95;margin-top:9px;max-width:480px;line-height:1.55;text-align:center">Mô tả ca bệnh, hỏi sản phẩm, tên nhà phân phối — hoặc chọn một năng lực ở thanh bên trái.</div>
             <div class="sm-inputbox" style="width:100%;max-width:680px;margin-top:26px;display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #DDE5EA;border-radius:14px;padding:7px 7px 7px 16px;box-shadow:0 2px 12px rgba(22,36,46,.06)">
               <input value="{{ inputVal }}" onChange="{{ onInput }}" onKeyDown="{{ onKey }}" placeholder="Mô tả triệu chứng, hỏi sản phẩm, hoặc tên nhà phân phối…" style="flex:1;border:none;outline:none;font-family:'Be Vietnam Pro';font-size:14px;color:#16242E;background:transparent;padding:8px 0">
-              <button onClick="{{ send }}" style="flex:none;width:40px;height:40px;border-radius:11px;border:none;background:#36677D;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.15s" style-hover="background:#13212C">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg>
+              <button onClick="{{ voiceInput }}" title="Hỏi bằng giọng nói" style="flex:none;width:40px;height:40px;border-radius:11px;border:none;background:transparent;color:#5E6E78;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.15s" style-hover="background:#EEF2F5;color:#36677D"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg></button><button onClick="{{ send }}" style="flex:none;width:40px;height:40px;border-radius:11px;border:none;background:#36677D;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.15s" style-hover="background:#13212C">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
               </button>
             </div>
 
@@ -260,7 +247,7 @@
             <!-- BOT -->
             <sc-if value="{{ m.isBot }}" hint-placeholder-val="{{ true }}">
               <div style="display:flex;gap:13px;align-items:flex-start">
-                <img src="assets/anova-mark.png" alt="Anova" style="width:34px;height:34px;object-fit:contain;flex:none;margin-top:2px">
+                <img src="assets/saigonvet-logo.png" alt="SAIGONVET" style="width:34px;height:34px;object-fit:contain;flex:none;margin-top:2px">
                 <div style="min-width:0;flex:1">
 
                   <!-- thinking -->
@@ -309,7 +296,10 @@
                           <span style="font-size:13px;font-weight:700;color:#23323B">Hồ sơ ca bệnh</span>
                           <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#9AA8B1;background:#F4F7F9;padding:2px 7px;border-radius:5px">{{ m.caseSnapshot.id }}</span>
                         </div>
-                        <span style="flex:none;font-size:11px;font-weight:700;color:#36677D;background:#E7F2F5;border:1px solid #94BFCE;padding:4px 11px;border-radius:20px">Đầy đủ {{ m.caseSnapshot.completeness }}%</span>
+                        <div style="display:flex;align-items:center;gap:7px;flex:none">
+                          <span style="font-size:11px;font-weight:700;color:{{ m.caseSnapshot.statusColor }};background:{{ m.caseSnapshot.statusBg }};border:1px solid {{ m.caseSnapshot.statusBd }};padding:4px 11px;border-radius:20px">{{ m.caseSnapshot.statusLabel }}</span>
+                          <span style="font-size:11px;font-weight:700;color:#36677D;background:#E7F2F5;border:1px solid #94BFCE;padding:4px 11px;border-radius:20px">Đầy đủ {{ m.caseSnapshot.completeness }}%</span>
+                        </div>
                       </div>
                       <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:#EEF2F5">
                         <sc-for list="{{ m.caseSnapshot.stats }}" as="st" hint-placeholder-count="6">
@@ -319,6 +309,44 @@
                           </div>
                         </sc-for>
                       </div>
+                    </div>
+                  </sc-if>
+
+                  <!-- NHẬT KÝ ĐIỀU TRỊ (thông tin ca lấy từ mobile) -->
+                  <sc-if value="{{ m.treatmentLog }}" hint-placeholder-val="{{ true }}">
+                    <div style="margin-top:12px;background:#fff;border:1px solid #E4EBEF;border-radius:14px;padding:14px 17px">
+                      <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#36677D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline></svg>
+                        <span style="font-size:13px;font-weight:700;color:#23323B">Nhật ký điều trị</span>
+                      </div>
+                      <div style="display:flex;flex-direction:column;gap:12px">
+                        <sc-for list="{{ m.treatmentLog }}" as="t" hint-placeholder-count="2">
+                          <div style="border-left:2px solid #E4EBEF;padding:1px 0 2px 14px">
+                            <div style="font-size:10.5px;font-weight:700;color:#9AA8B1">{{ t.date }}</div>
+                            <div style="font-size:13px;font-weight:700;color:#1C2B34;margin:2px 0 3px">{{ t.productName }}</div>
+                            <div style="font-size:12px;color:#5E6E78;line-height:1.45">{{ t.dose }}</div>
+                            <div style="font-size:12px;color:#5E6E78;line-height:1.45">{{ t.note }}</div>
+                            <span style="display:inline-block;margin-top:6px;font-size:10.5px;font-weight:800;color:{{ t.respColor }}">{{ t.response }}</span>
+                          </div>
+                        </sc-for>
+                      </div>
+                    </div>
+                  </sc-if>
+
+                  <!-- ĐÁNH GIÁ KẾT QUẢ (thông tin ca lấy từ mobile) -->
+                  <sc-if value="{{ m.caseOutcome }}" hint-placeholder-val="{{ true }}">
+                    <div style="margin-top:12px;background:#fff;border:1px solid #E4EBEF;border-radius:14px;padding:14px 17px">
+                      <div style="display:flex;align-items:center;gap:8px;margin-bottom:11px">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#36677D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+                        <span style="font-size:13px;font-weight:700;color:#23323B">Đánh giá kết quả</span>
+                      </div>
+                      <span style="display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:800;color:{{ m.caseOutcome.color }};background:{{ m.caseOutcome.bg }};border:1px solid {{ m.caseOutcome.bd }};padding:8px 13px;border-radius:11px">{{ m.caseOutcome.headline }}</span>
+                      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:10px">
+                        <sc-for list="{{ m.caseOutcome.effProductNames }}" as="p" hint-placeholder-count="2">
+                          <span style="font-size:11px;font-weight:600;color:#426119;background:#EDF5F0;border:1px solid #CADDCF;padding:4px 10px;border-radius:999px">{{ p }}</span>
+                        </sc-for>
+                      </div>
+                      <div style="font-size:12.5px;color:#5E6E78;margin-top:10px;line-height:1.5">{{ m.caseOutcome.note }}</div>
                     </div>
                   </sc-if>
 
@@ -822,8 +850,8 @@
       <div style="max-width:none;margin:0;padding:0 36px">
         <div class="sm-inputbox" style="display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #DDE5EA;border-radius:14px;padding:7px 7px 7px 16px;box-shadow:0 2px 10px rgba(22,36,46,.04)">
           <input value="{{ inputVal }}" onChange="{{ onInput }}" onKeyDown="{{ onKey }}" placeholder="Mô tả triệu chứng, hỏi sản phẩm, hoặc tên nhà phân phối…" style="flex:1;border:none;outline:none;font-family:'Be Vietnam Pro';font-size:14px;color:#16242E;background:transparent;padding:8px 0">
-          <button onClick="{{ send }}" style="flex:none;width:40px;height:40px;border-radius:11px;border:none;background:#36677D;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.15s" style-hover="background:#13212C">
-            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg>
+          <button onClick="{{ voiceInput }}" title="Hỏi bằng giọng nói" style="flex:none;width:40px;height:40px;border-radius:11px;border:none;background:transparent;color:#5E6E78;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.15s" style-hover="background:#EEF2F5;color:#36677D"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg></button><button onClick="{{ send }}" style="flex:none;width:40px;height:40px;border-radius:11px;border:none;background:#36677D;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.15s" style-hover="background:#13212C">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
           </button>
         </div>
         <div style="text-align:center;font-size:11px;color:#A4B1BA;margin-top:9px">SalesMate có thể sai sót · Ca thú y nặng luôn cần xác nhận của chuyên gia</div>
@@ -1515,12 +1543,20 @@ class Component extends DCLogic {
     const impactTable = this.buildImpactTable(d);
     const productGroups = this.groupProductsByRole(d);
     const quickActions = this.diagnosisQuickActions(d, caseObj, needEsc);
-    let caseSnapshot = null;
+    let caseSnapshot = null, treatmentLog = null, caseOutcome = null;
     if (caseObj){
       const stat = (k, v) => ({ k, v: (v == null || v === '') ? '—' : String(v) });
+      const stMap = {
+        recovered: { label: 'Đã khỏi', color: '#4C825C', bg: '#EDF5F0', bd: '#CADDCF' },
+        lost: { label: 'Không qua khỏi', color: '#9E5564', bg: '#F8EEF0', bd: '#E8C8CE' },
+        watch: { label: 'Đang theo dõi', color: '#B4853A', bg: '#FAF5ED', bd: '#EADBC4' },
+        active: { label: 'Đang điều trị', color: '#B4853A', bg: '#FAF5ED', bd: '#EADBC4' }
+      };
+      const cs = stMap[caseObj.status] || stMap.active;
       caseSnapshot = {
         id: caseObj.id,
         completeness: this.calcCaseCompleteness(caseObj),
+        statusLabel: cs.label, statusColor: cs.color, statusBg: cs.bg, statusBd: cs.bd,
         stats: [
           stat('Khách / trại', caseObj.customer),
           stat('Loài / giai đoạn', caseObj.species + (caseObj.stage ? ' · ' + caseObj.stage : '')),
@@ -1530,12 +1566,28 @@ class Component extends DCLogic {
           stat('Khởi phát', caseObj.started)
         ]
       };
+      // Nhật ký điều trị (lấy từ ca của mobile)
+      if (caseObj.treatments && caseObj.treatments.length){
+        const rc = { up: '#4C825C', mid: '#B4853A', down: '#9E5564' };
+        treatmentLog = caseObj.treatments.map(t => ({
+          date: t.date || '', productName: t.productName || 'Can thiệp', dose: t.dose || '',
+          note: t.note || '', response: t.response || '', respColor: rc[t.respClass] || '#8B99A2'
+        }));
+      }
+      // Đánh giá kết quả (lấy từ ca của mobile)
+      if (caseObj.outcome){
+        const o = caseObj.outcome; const om = stMap[o.status] || stMap.watch;
+        caseOutcome = { headline: om.label + (o.recoveredPct ? (' · ' + o.recoveredPct + '% hồi phục') : ''),
+          color: om.color, bg: om.bg, bd: om.bd, effProductNames: o.effProductNames || [], note: o.note || '' };
+      }
     }
 
     return {
       isBot: true, pills: ['chan_doan_benh', 'tra_cuu_tai_lieu'],
       paras: ['Đối chiếu triệu chứng với cơ sở tri thức bệnh (' + db.diseases.length + ' bệnh trên heo & gà), kèm phân tích dịch tễ - cơ chế bệnh sinh và phương án xác chẩn. Kết quả khả năng cao nhất:'],
       caseSnapshot,
+      treatmentLog,
+      caseOutcome,
       diagnosis: {
         benh: d.ten_benh, doTinCay: conf, confColor,
         mucDo: this.mucLabel(d.muc_do), mucColor: this.mucColor(d.muc_do),
@@ -1828,6 +1880,22 @@ class Component extends DCLogic {
     this.ask(tool, txt);
   }
 
+  // Nhập bằng giọng nói (Web Speech API, vi-VN) — đồng bộ với bản mobile
+  voiceInputStart(){
+    try {
+      const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (!SR) { this.toast && this.toast('Trình duyệt không hỗ trợ nhập giọng nói'); return; }
+      const rec = new SR();
+      rec.lang = 'vi-VN'; rec.interimResults = false; rec.maxAlternatives = 1;
+      rec.onresult = (e) => {
+        const t = e.results[0][0].transcript;
+        this.setState({ input: t, tab: 'chat' }, () => this.sendTyped());
+      };
+      rec.onerror = (e) => { this.toast && this.toast('Lỗi micro: ' + (e.error || '')); };
+      rec.start();
+    } catch (err) { console.error(err); }
+  }
+
   runExample(tool){
     const ex = {
       diagnose: 'Heo sốt cao 41 độ, bỏ ăn, da vùng tai và bụng đỏ tím, một số con chết nhanh, tỷ lệ chết cao. Đây là bệnh gì?',
@@ -1837,6 +1905,45 @@ class Component extends DCLogic {
     }[tool];
     this.pushUser(ex);
     this.ask(tool, ex);
+  }
+
+  askQuick(q){ this.setState({ input: q, tab: 'chat' }, () => this.sendTyped()); }
+
+  // Bấm "Tri thức" → hiện GIỚI THIỆU trợ lý + ví dụ (không hỏi luôn) — như mobile
+  showKnowledgeIntro(){
+    const chip = (label, q) => ({ label, tone: '#36677D', bg: '#E7F2F5', bd: '#94BFCE', fn: () => this.askQuick(q) });
+    this.setState({ tab: 'chat', input: '', messages: [{
+      isBot: true,
+      paras: [
+        'Trợ lý tri thức hỗ trợ: chẩn đoán bệnh từ triệu chứng, phác đồ xử lý tham khảo, tra cứu sản phẩm – liều – giá và chương trình khuyến mãi. Tôi chỉ hỗ trợ tư vấn ban đầu, không thay thế bác sĩ thú y.',
+        'Anh/chị mô tả loài vật nuôi, dấu hiệu và diễn biến — hoặc chọn nhanh một ví dụ:'
+      ],
+      quickActions: [
+        chip('Heo sốt cao, bỏ ăn, chết nhanh?', 'Heo sốt cao 41 độ, bỏ ăn, da tai bụng đỏ tím, chết nhanh tỷ lệ cao. Đây là bệnh gì?'),
+        chip('Phác đồ Dịch tả lợn (ASF)', 'Phác đồ xử lý bệnh Dịch tả lợn châu Phi (ASF)?'),
+        chip('Tra cứu Anova Enroflox 10%', 'Cho tôi chi tiết Anova Enroflox 10%: công dụng, liều lượng, đường dùng và giá.'),
+        chip('Đang có khuyến mãi gì?', 'Đang có chương trình khuyến mãi nào áp dụng?')
+      ],
+      suggestion: 'Mẹo: mô tả càng chi tiết (loài, tuổi, tỷ lệ mắc/chết, diễn biến) thì chẩn đoán càng chính xác.'
+    }] });
+  }
+
+  // Bấm "Push-sale" → hiện GIỚI THIỆU + danh sách nhà phân phối để chọn (không hỏi luôn)
+  showPushIntro(){
+    const dists = (this.DB && this.DB.distributors) || [];
+    const chips = dists.slice(0, 4).map(d => ({
+      label: 'Phân tích ' + d.ten, tone: '#4C825C', bg: '#EDF5F0', bd: '#CADDCF',
+      fn: () => this.askQuick('Phân tích nhà phân phối ' + d.ten + (d.khu_vuc ? ' (' + d.khu_vuc + ')' : '') + ' và gợi ý đơn kế tiếp + cơ hội bán thêm.')
+    }));
+    this.setState({ tab: 'chat', input: '', messages: [{
+      isBot: true,
+      paras: [
+        'Trợ lý Push-sale: xem lịch sử mua của khách, gợi ý cơ hội up-sale / cross-sale kèm lý do và đề xuất đơn kế tiếp.',
+        'Chọn một nhà phân phối để bắt đầu phân tích:'
+      ],
+      quickActions: chips,
+      suggestion: 'Mẹo: ưu tiên khách ở vùng đang có cảnh báo dịch để chào sản phẩm phòng/sát trùng đúng thời điểm.'
+    }] });
   }
 
   // ============ SẢN PHẨM HÓA: HELPERS CHẨN ĐOÁN SÂU ============
@@ -2191,10 +2298,18 @@ class Component extends DCLogic {
     this.ask('diagnose', q, caseObj);
   }
   reopenCase(caseObj){
-    this.setState({ tab: 'chat' });
+    // Bấm ca → dựng NGAY hồ sơ + chẩn đoán của ca (không qua hiệu ứng chat "đang xử lý")
     const q = this.caseToQuery(caseObj);
-    this.pushUser('Mở lại ca ' + caseObj.id + ': ' + q);
-    this.ask('diagnose', q, caseObj);
+    const jump = () => {
+      const bot = this.build('diagnose', q, caseObj) || this.buildGeneric();
+      if (this.props.showThinkingTrace === false) bot.pills = null;
+      if (this.props.showSources === false) bot.sources = null;
+      const title = 'Ca ' + caseObj.id + ' · ' + (caseObj.species || 'Ca') + (caseObj.province ? (' · ' + caseObj.province) : '');
+      this.setState({ tab: 'chat', input: '', messages: [{ isUser: true, text: title }, bot] }, () => {
+        const el = this.scrollRef.current; if (el) el.scrollTop = 0;
+      });
+    };
+    if (this.DB && !this.DB.error) jump(); else this.loadPromise.then(jump);
   }
   recentCases(){
     return (this.state.cases || []).slice(0, 6).map(c => ({
@@ -2338,11 +2453,14 @@ class Component extends DCLogic {
       onInput: e => this.setState({ input: e.target.value }),
       onKey: e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); this.sendTyped(); } },
       send: () => this.sendTyped(),
+      voiceInput: () => this.voiceInputStart(),
       reset: () => this.setState({ messages: [], input: '' }),
       runDiagnose: () => this.runExample('diagnose'),
       runDrug: () => this.runExample('drug'),
       runDistributor: () => this.runExample('distributor'),
       runRag: () => this.runExample('rag'),
+      openKnowledge: () => this.showKnowledgeIntro(),
+      openPush: () => this.showPushIntro(),
       // ===== Tab Bản đồ dịch bệnh (mới) =====
       isChat: this.state.tab === 'chat',
       isMarket: this.state.tab === 'market',
@@ -2362,6 +2480,7 @@ class Component extends DCLogic {
       marketRecent: this.marketRecent(),
       goChat: () => this.setState({ tab: 'chat' }),
       goMarket: () => this.setState({ tab: 'market' }),
+      severeCount: this.openAlertHottest(),
       tabChatStyle: this.tabStyle(this.state.tab === 'chat'),
       tabMarketStyle: this.tabStyle(this.state.tab === 'market'),
       userAvatarStyle: this.userAvatarStyle(this.state.userOn),
